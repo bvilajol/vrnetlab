@@ -13,7 +13,7 @@ It is tested with:
  * Cisco CSR1000v 17.03.04a
  * Cisco CSR1000v 16.12.05
 
-[Lab 01 - Introduction to NAPALM](https://github.com/bvilajol/vrnetlab/master/lab/01_napalm_cisco/README.md)
+[Lab 01 - Introduction to NAPALM](https://github.com/bvilajol/vrnetlab/blob/master/lab/01_napalm_cisco/README.md)
 -------------------------
 
 * You need to build your own containers for the network devices.
