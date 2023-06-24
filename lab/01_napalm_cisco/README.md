@@ -13,6 +13,13 @@
 * Download csr1000v-universalk9.17.03.05-serial.qcow2 or any other tested version
 * Follow the instructions on [vrnetlab](https://github.com/vrnetlab/vrnetlab/blob/master/csr/README.md)
 
+        sudo docker images
+        REPOSITORY         TAG         IMAGE ID       CREATED             SIZE
+        vrnetlab/vr-csr    17.03.05    484061885a0c   48 minutes ago      2.4GB
+        vrnetlab/vr-csr    17.03.04a   dfafaabe0326   54 minutes ago      2.4GB
+        vrnetlab/vr-csr    16.12.05    059090343a2d   About an hour ago   1.93GB
+        vrnetlab/vr-xcon   latest      0843f237b02a   4 years ago         153MB
+
 ## 1. Setup the Lab
 
 The 4th pod that is executed is the one responsible for the wire connections between the virtual routers (a KVM instance within a running pod)
@@ -22,7 +29,7 @@ The 4th pod that is executed is the one responsible for the wire connections bet
         sudo docker run -d --name vr3 --privileged vrnetlab/vr-csr:17.03.05
         sudo docker run -d --privileged --name vr-xcon --link vr1 --link vr2 --link vr3 vrnetlab/vr-xcon --p2p vr1/1--vr2/2 vr2/1--vr3/2 vr3/1--vr1/2
 
-
+        sudo docker ps
         CONTAINER ID   IMAGE                      COMMAND                  CREATED         STATUS                   PORTS                                                 NAMES
         c191dc4ff2f1   vrnetlab/vr-xcon           "/xcon.py --p2p vr1/…"   6 minutes ago   Up 6 minutes                                                                   vr-xcon
         7508b51de8b7   vrnetlab/vr-csr:17.03.05   "/launch.py"             6 minutes ago   Up 6 minutes (healthy)   22/tcp, 830/tcp, 5000/tcp, 10000-10099/tcp, 161/udp   vr3
