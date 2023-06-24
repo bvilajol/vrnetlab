@@ -74,6 +74,7 @@ class CSR_vm(vrnetlab.VM):
             cfg_file.write("do license install tftp://10.0.0.2/license.lic\r\n\r\n")
 
         cfg_file.write("platform console serial\r\n\r\n")
+        cfg_file.write("ip scp server enable\r\n")
         cfg_file.write("do wr\r\n")
         cfg_file.write("do reload\r\n")
         cfg_file.close()
@@ -142,7 +143,11 @@ class CSR_vm(vrnetlab.VM):
 
         self.wait_write("hostname csr1000v")
         self.wait_write("username %s privilege 15 password %s" % (self.username, self.password))
-        self.wait_write("ip domain-name example.com")
+        #self.wait_write("ip domain-name example.com")
+        if int(self.version.split('.')[0]) >= 16:
+           self.wait_write("ip domain name example.com")
+        else:
+           self.wait_write("ip domain-name example.com")
         self.wait_write("crypto key generate rsa modulus 2048")
 
         self.wait_write("interface GigabitEthernet1")
