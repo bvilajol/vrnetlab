@@ -17,5 +17,5 @@ It is tested with:
 -------------------------
 
 * You need to build your own containers for the network devices.
-* Created simple eBGP scenario of three Cisco CSR1000v nodes.
-* Pyton NAPALM is used to configure and validate the scenario.
+* Simple eBGP scenario of three Cisco CSR1000v nodes.
+* Python NAPALM is used to configure and validate the laboratory.
