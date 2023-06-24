@@ -10,8 +10,8 @@
 
 ## 0. Build the image
 
-Download csr1000v-universalk9.17.03.05-serial.qcow2 or any other tested version
-Follow the instructions on [vrnetlab](https://github.com/vrnetlab/vrnetlab/blob/master/csr/README.md)
+* Download csr1000v-universalk9.17.03.05-serial.qcow2 or any other tested version
+* Follow the instructions on [vrnetlab](https://github.com/vrnetlab/vrnetlab/blob/master/csr/README.md)
 
 ## 1. Setup the Lab
 
