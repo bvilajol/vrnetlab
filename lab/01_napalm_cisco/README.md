@@ -25,7 +25,7 @@ The 4th pod that is executed is the one responsible for the wire connections bet
         adc4129318a3   vrnetlab/vr-csr:17.03.05   "/launch.py"             6 minutes ago   Up 6 minutes (healthy)   22/tcp, 830/tcp, 5000/tcp, 10000-10099/tcp, 161/udp   vr2
         ddcc92b1db41   vrnetlab/vr-csr:17.03.05   "/launch.py"             6 minutes ago   Up 6 minutes (healthy)   22/tcp, 830/tcp, 5000/tcp, 10000-10099/tcp, 161/udp   vr1
 
-### Connecting to nodes (containerized linux KVM/QEMU host)
+### 1.1 Connecting to nodes (containerized linux KVM/QEMU host)
 
 This is not needed as per usual operation, documented as per completeness.
 
@@ -76,7 +76,7 @@ Bootstrap config is modified to enable scp server (NETCONF requires so - to be u
         do wr
         do reload
 
-### Docker networking
+### 1.2 Docker networking
 
 Inspect network module for docker, on bridged interface:
 
@@ -150,7 +150,7 @@ Inspect network module for docker, on bridged interface:
         ]
 
 
-### Connecting console port on routers (IOS running on containerized linux KVM/QEMU host)
+### 1.3 Connecting console port on routers (IOS running on containerized linux KVM/QEMU host)
 
 Console is exposed to port 5000. Connect using telnet.
 
@@ -184,7 +184,7 @@ Console is exposed to port 5000. Connect using telnet.
         Configuration register is 0x2102
 
 
-## Build the Laboratory
+## 2. Build the Laboratory
 
         python3 configure_network.py --input input.yml
 
@@ -284,7 +284,7 @@ Extended logging is available: logging.log
         }
         ...
 
-## Old-school validation for the Laboratory
+## 3. Old-school validation for the Laboratory
 
         $ telnet -l admin 172.17.0.2 5000
         Trying 172.17.0.2...
