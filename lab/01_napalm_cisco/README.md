@@ -1,14 +1,16 @@
-# Learning Network Automation
-
-Welcome to Network Automation examples
-
-# Introduction to NAPALM
+# Lab 01 - Introduction to NAPALM
 
 You need to build your own containers for the network devices. Used 
 Simple eBGP scenario with a ring of 3 x Cisco CSR1000v.
 NAPALM is used to configure and validate the scenario.
 
-## Setup the Lab
+<p align="center" width="50%">
+    <img width="50%" src="lab.png">
+</p>
+
+## 0. Build the image
+
+## 1. Setup the Lab
 
 The 4th pod that is executed is the one responsible for the wire connections between the virtual routers (a KVM instance within a running pod)
 
