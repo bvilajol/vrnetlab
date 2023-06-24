@@ -11,9 +11,11 @@
 ## 0. Build the image
 
 * Download csr1000v-universalk9.17.03.05-serial.qcow2 or any other tested version
-* Follow the instructions on [vrnetlab](https://github.com/vrnetlab/vrnetlab/blob/master/csr/README.md)
+* Follow the instructions on [vrnetlab](https://github.com/vrnetlab/vrnetlab/blob/master/csr/README.md)T
+* vr-xcon is also needed, but available on docker-images
 
         sudo docker images
+  
         REPOSITORY         TAG         IMAGE ID       CREATED             SIZE
         vrnetlab/vr-csr    17.03.05    484061885a0c   48 minutes ago      2.4GB
         vrnetlab/vr-csr    17.03.04a   dfafaabe0326   54 minutes ago      2.4GB
@@ -30,6 +32,7 @@ The 4th pod that is executed is the one responsible for the wire connections bet
         sudo docker run -d --privileged --name vr-xcon --link vr1 --link vr2 --link vr3 vrnetlab/vr-xcon --p2p vr1/1--vr2/2 vr2/1--vr3/2 vr3/1--vr1/2
 
         sudo docker ps
+        
         CONTAINER ID   IMAGE                      COMMAND                  CREATED         STATUS                   PORTS                                                 NAMES
         c191dc4ff2f1   vrnetlab/vr-xcon           "/xcon.py --p2p vr1/…"   6 minutes ago   Up 6 minutes                                                                   vr-xcon
         7508b51de8b7   vrnetlab/vr-csr:17.03.05   "/launch.py"             6 minutes ago   Up 6 minutes (healthy)   22/tcp, 830/tcp, 5000/tcp, 10000-10099/tcp, 161/udp   vr3
