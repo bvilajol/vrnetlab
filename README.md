@@ -11,7 +11,7 @@ It is tested with:
 
  * Cisco CSR1000v 16.12.05
  * Cisco CSR1000v 17.03.04a
- * Cisco CSR1000v 16.12.05
+ * Cisco CSR1000v 17.03.05
 
 [Lab 01 - Introduction to NAPALM](https://github.com/bvilajol/vrnetlab/blob/master/lab/01_napalm_cisco/README.md)
 -------------------------
