@@ -1,8 +1,8 @@
 # Lab 01 - Introduction to NAPALM
 
-You need to build your own containers for the network devices. Used 
-Simple eBGP scenario with a ring of 3 x Cisco CSR1000v.
-NAPALM is used to configure and validate the scenario.
+* You need to build your own containers for the network devices.
+* Created simple eBGP scenario of three Cisco CSR1000v nodes.
+* Pyton NAPALM is used to configure and validate the scenario.
 
 <p align="center" width="50%">
     <img width="50%" src="lab.png">
