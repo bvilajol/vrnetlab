@@ -1,15 +1,15 @@
-[2023-06-23 23:31:45 - 118 - config_interfaces() - DEBUG ] config_interfaces() connecting to 172.17.0.2...
-[2023-06-23 23:31:45 - 120 - config_interfaces() - DEBUG ] config_interfaces() getting device facts for 172.17.0.2
-[2023-06-23 23:31:46 - 66 - get_config_data() - DEBUG ] get_config_data() executed for input.yml
-[2023-06-23 23:31:46 - 69 - get_config_data() - DEBUG ] get_config_data() {'172.17.0.2': {'bgp': {'asn': 65511, 'rid': '192.168.1.1', 'neighbors': [{'ipaddr': '192.168.1.2', 'remote_asn': 65512}, {'ipaddr': '192.168.3.1', 'remote_asn': 65513}]}, 'interfaces': {'GigabitEthernet3': {'ipaddr': '192.168.3.2 255.255.255.0', 'description': None, 'state': 'up'}, 'GigabitEthernet2': {'ipaddr': '192.168.1.1 255.255.255.0', 'description': None, 'state': 'up'}}}, '172.17.0.3': {'bgp': {'asn': 65512, 'rid': '192.168.2.1', 'neighbors': [{'ipaddr': '192.168.1.1', 'remote_asn': 65511}, {'ipaddr': '192.168.2.2', 'remote_asn': 65513}]}, 'interfaces': {'GigabitEthernet2': {'ipaddr': '192.168.2.1 255.255.255.0', 'description': None, 'state': 'up'}, 'GigabitEthernet3': {'ipaddr': '192.168.1.2 255.255.255.0', 'description': None, 'state': 'up'}}}, '172.17.0.4': {'bgp': {'asn': 65513, 'rid': '192.168.0.2', 'neighbors': [{'ipaddr': '192.168.3.2', 'remote_asn': 65511}, {'ipaddr': '192.168.2.1', 'remote_asn': 65512}]}, 'interfaces': {'GigabitEthernet2': {'ipaddr': '192.168.3.1 255.255.255.0', 'description': None, 'state': 'up'}, 'GigabitEthernet3': {'ipaddr': '192.168.2.2 255.255.255.0', 'description': None, 'state': 'up'}}}}
-[2023-06-23 23:31:46 - 49 - inner() - DEBUG ] *** get_config_data executed - ('input.yml', <Logger __main__ (DEBUG)>)
-[2023-06-23 23:31:46 - 89 - get_target_config() - DEBUG ] get_target_config() executed from input.yml
-[2023-06-23 23:31:46 - 90 - get_target_config() - DEBUG ] get_target_config() extract 
+[2023-06-24 16:39:52 - 118 - config_interfaces() - DEBUG ] config_interfaces() connecting to 172.17.0.2...
+[2023-06-24 16:39:54 - 120 - config_interfaces() - DEBUG ] config_interfaces() getting device facts for 172.17.0.2
+[2023-06-24 16:39:54 - 66 - get_config_data() - DEBUG ] get_config_data() executed for input.yml
+[2023-06-24 16:39:54 - 69 - get_config_data() - DEBUG ] get_config_data() {'172.17.0.2': {'bgp': {'asn': 65511, 'rid': '192.168.1.1', 'neighbors': [{'ipaddr': '192.168.1.2', 'remote_asn': 65512}, {'ipaddr': '192.168.3.1', 'remote_asn': 65513}]}, 'interfaces': {'GigabitEthernet3': {'ipaddr': '192.168.3.2 255.255.255.0', 'description': None, 'state': 'up'}, 'GigabitEthernet2': {'ipaddr': '192.168.1.1 255.255.255.0', 'description': None, 'state': 'up'}}}, '172.17.0.3': {'bgp': {'asn': 65512, 'rid': '192.168.2.1', 'neighbors': [{'ipaddr': '192.168.1.1', 'remote_asn': 65511}, {'ipaddr': '192.168.2.2', 'remote_asn': 65513}]}, 'interfaces': {'GigabitEthernet2': {'ipaddr': '192.168.2.1 255.255.255.0', 'description': None, 'state': 'up'}, 'GigabitEthernet3': {'ipaddr': '192.168.1.2 255.255.255.0', 'description': None, 'state': 'up'}}}, '172.17.0.4': {'bgp': {'asn': 65513, 'rid': '192.168.0.2', 'neighbors': [{'ipaddr': '192.168.3.2', 'remote_asn': 65511}, {'ipaddr': '192.168.2.1', 'remote_asn': 65512}]}, 'interfaces': {'GigabitEthernet2': {'ipaddr': '192.168.3.1 255.255.255.0', 'description': None, 'state': 'up'}, 'GigabitEthernet3': {'ipaddr': '192.168.2.2 255.255.255.0', 'description': None, 'state': 'up'}}}}
+[2023-06-24 16:39:54 - 49 - inner() - DEBUG ] *** get_config_data executed - ('input.yml', <Logger __main__ (DEBUG)>)
+[2023-06-24 16:39:54 - 89 - get_target_config() - DEBUG ] get_target_config() executed from input.yml
+[2023-06-24 16:39:54 - 90 - get_target_config() - DEBUG ] get_target_config() extract 
  {'172.17.0.2': {'bgp': {'asn': 65511, 'rid': '192.168.1.1', 'neighbors': [{'ipaddr': '192.168.1.2', 'remote_asn': 65512}, {'ipaddr': '192.168.3.1', 'remote_asn': 65513}]}, 'interfaces': {'GigabitEthernet3': {'ipaddr': '192.168.3.2 255.255.255.0', 'description': None, 'state': 'up'}, 'GigabitEthernet2': {'ipaddr': '192.168.1.1 255.255.255.0', 'description': None, 'state': 'up'}}}, '172.17.0.3': {'bgp': {'asn': 65512, 'rid': '192.168.2.1', 'neighbors': [{'ipaddr': '192.168.1.1', 'remote_asn': 65511}, {'ipaddr': '192.168.2.2', 'remote_asn': 65513}]}, 'interfaces': {'GigabitEthernet2': {'ipaddr': '192.168.2.1 255.255.255.0', 'description': None, 'state': 'up'}, 'GigabitEthernet3': {'ipaddr': '192.168.1.2 255.255.255.0', 'description': None, 'state': 'up'}}}, '172.17.0.4': {'bgp': {'asn': 65513, 'rid': '192.168.0.2', 'neighbors': [{'ipaddr': '192.168.3.2', 'remote_asn': 65511}, {'ipaddr': '192.168.2.1', 'remote_asn': 65512}]}, 'interfaces': {'GigabitEthernet2': {'ipaddr': '192.168.3.1 255.255.255.0', 'description': None, 'state': 'up'}, 'GigabitEthernet3': {'ipaddr': '192.168.2.2 255.255.255.0', 'description': None, 'state': 'up'}}}}
-[2023-06-23 23:31:46 - 93 - get_target_config() - DEBUG ] get_target_config() filtered 
+[2023-06-24 16:39:54 - 93 - get_target_config() - DEBUG ] get_target_config() filtered 
  {'172.17.0.2': {'bgp': {'asn': 65511, 'rid': '192.168.1.1', 'neighbors': [{'ipaddr': '192.168.1.2', 'remote_asn': 65512}, {'ipaddr': '192.168.3.1', 'remote_asn': 65513}]}, 'interfaces': {'GigabitEthernet3': {'ipaddr': '192.168.3.2 255.255.255.0', 'description': None, 'state': 'up'}, 'GigabitEthernet2': {'ipaddr': '192.168.1.1 255.255.255.0', 'description': None, 'state': 'up'}}}}
-[2023-06-23 23:31:46 - 97 - get_target_config() - DEBUG ] get_target_config() selected template Cisco_interfaces.j2
-[2023-06-23 23:31:46 - 100 - get_target_config() - DEBUG ] get_target_config() result is 
+[2023-06-24 16:39:54 - 97 - get_target_config() - DEBUG ] get_target_config() selected template Cisco_interfaces.j2
+[2023-06-24 16:39:54 - 100 - get_target_config() - DEBUG ] get_target_config() result is 
  interface GigabitEthernet3
  description None
  ip address 192.168.3.2 255.255.255.0
@@ -19,27 +19,31 @@ interface GigabitEthernet2
  ip address 192.168.1.1 255.255.255.0
  no shutdown
 
-[2023-06-23 23:31:46 - 49 - inner() - DEBUG ] *** get_target_config executed - ('Cisco',)
-[2023-06-23 23:31:47 - 126 - config_interfaces() - DEBUG ] config_interfaces() config_diff is 
+[2023-06-24 16:39:54 - 49 - inner() - DEBUG ] *** get_target_config executed - ('Cisco',)
+[2023-06-24 16:39:55 - 126 - config_interfaces() - DEBUG ] config_interfaces() config_diff is 
  +interface GigabitEthernet3
++ description None
++ ip address 192.168.3.2 255.255.255.0
 - no shutdown
 +interface GigabitEthernet2
++ description None
++ ip address 192.168.1.1 255.255.255.0
 - no shutdown...
-[2023-06-23 23:31:48 - 128 - config_interfaces() - DEBUG ] config_interfaces() executed on 172.17.0.2
-[2023-06-23 23:31:48 - 130 - config_interfaces() - DEBUG ] config_interfaces() connection to 172.17.0.2 closed
-[2023-06-23 23:31:48 - 49 - inner() - DEBUG ] *** config_interfaces executed - (<napalm.ios.ios.IOSDriver object at 0x7f4b8ad3e920>, <Logger __main__ (DEBUG)>)
-[2023-06-23 23:31:48 - 118 - config_interfaces() - DEBUG ] config_interfaces() connecting to 172.17.0.3...
-[2023-06-23 23:31:48 - 120 - config_interfaces() - DEBUG ] config_interfaces() getting device facts for 172.17.0.3
-[2023-06-23 23:31:49 - 66 - get_config_data() - DEBUG ] get_config_data() executed for input.yml
-[2023-06-23 23:31:49 - 69 - get_config_data() - DEBUG ] get_config_data() {'172.17.0.2': {'bgp': {'asn': 65511, 'rid': '192.168.1.1', 'neighbors': [{'ipaddr': '192.168.1.2', 'remote_asn': 65512}, {'ipaddr': '192.168.3.1', 'remote_asn': 65513}]}, 'interfaces': {'GigabitEthernet3': {'ipaddr': '192.168.3.2 255.255.255.0', 'description': None, 'state': 'up'}, 'GigabitEthernet2': {'ipaddr': '192.168.1.1 255.255.255.0', 'description': None, 'state': 'up'}}}, '172.17.0.3': {'bgp': {'asn': 65512, 'rid': '192.168.2.1', 'neighbors': [{'ipaddr': '192.168.1.1', 'remote_asn': 65511}, {'ipaddr': '192.168.2.2', 'remote_asn': 65513}]}, 'interfaces': {'GigabitEthernet2': {'ipaddr': '192.168.2.1 255.255.255.0', 'description': None, 'state': 'up'}, 'GigabitEthernet3': {'ipaddr': '192.168.1.2 255.255.255.0', 'description': None, 'state': 'up'}}}, '172.17.0.4': {'bgp': {'asn': 65513, 'rid': '192.168.0.2', 'neighbors': [{'ipaddr': '192.168.3.2', 'remote_asn': 65511}, {'ipaddr': '192.168.2.1', 'remote_asn': 65512}]}, 'interfaces': {'GigabitEthernet2': {'ipaddr': '192.168.3.1 255.255.255.0', 'description': None, 'state': 'up'}, 'GigabitEthernet3': {'ipaddr': '192.168.2.2 255.255.255.0', 'description': None, 'state': 'up'}}}}
-[2023-06-23 23:31:49 - 49 - inner() - DEBUG ] *** get_config_data executed - ('input.yml', <Logger __main__ (DEBUG)>)
-[2023-06-23 23:31:49 - 89 - get_target_config() - DEBUG ] get_target_config() executed from input.yml
-[2023-06-23 23:31:49 - 90 - get_target_config() - DEBUG ] get_target_config() extract 
+[2023-06-24 16:39:57 - 128 - config_interfaces() - DEBUG ] config_interfaces() executed on 172.17.0.2
+[2023-06-24 16:39:57 - 130 - config_interfaces() - DEBUG ] config_interfaces() connection to 172.17.0.2 closed
+[2023-06-24 16:39:57 - 49 - inner() - DEBUG ] *** config_interfaces executed - (<napalm.ios.ios.IOSDriver object at 0x7fb73f3547f0>, <Logger __main__ (DEBUG)>)
+[2023-06-24 16:39:57 - 118 - config_interfaces() - DEBUG ] config_interfaces() connecting to 172.17.0.3...
+[2023-06-24 16:39:59 - 120 - config_interfaces() - DEBUG ] config_interfaces() getting device facts for 172.17.0.3
+[2023-06-24 16:40:00 - 66 - get_config_data() - DEBUG ] get_config_data() executed for input.yml
+[2023-06-24 16:40:00 - 69 - get_config_data() - DEBUG ] get_config_data() {'172.17.0.2': {'bgp': {'asn': 65511, 'rid': '192.168.1.1', 'neighbors': [{'ipaddr': '192.168.1.2', 'remote_asn': 65512}, {'ipaddr': '192.168.3.1', 'remote_asn': 65513}]}, 'interfaces': {'GigabitEthernet3': {'ipaddr': '192.168.3.2 255.255.255.0', 'description': None, 'state': 'up'}, 'GigabitEthernet2': {'ipaddr': '192.168.1.1 255.255.255.0', 'description': None, 'state': 'up'}}}, '172.17.0.3': {'bgp': {'asn': 65512, 'rid': '192.168.2.1', 'neighbors': [{'ipaddr': '192.168.1.1', 'remote_asn': 65511}, {'ipaddr': '192.168.2.2', 'remote_asn': 65513}]}, 'interfaces': {'GigabitEthernet2': {'ipaddr': '192.168.2.1 255.255.255.0', 'description': None, 'state': 'up'}, 'GigabitEthernet3': {'ipaddr': '192.168.1.2 255.255.255.0', 'description': None, 'state': 'up'}}}, '172.17.0.4': {'bgp': {'asn': 65513, 'rid': '192.168.0.2', 'neighbors': [{'ipaddr': '192.168.3.2', 'remote_asn': 65511}, {'ipaddr': '192.168.2.1', 'remote_asn': 65512}]}, 'interfaces': {'GigabitEthernet2': {'ipaddr': '192.168.3.1 255.255.255.0', 'description': None, 'state': 'up'}, 'GigabitEthernet3': {'ipaddr': '192.168.2.2 255.255.255.0', 'description': None, 'state': 'up'}}}}
+[2023-06-24 16:40:00 - 49 - inner() - DEBUG ] *** get_config_data executed - ('input.yml', <Logger __main__ (DEBUG)>)
+[2023-06-24 16:40:00 - 89 - get_target_config() - DEBUG ] get_target_config() executed from input.yml
+[2023-06-24 16:40:00 - 90 - get_target_config() - DEBUG ] get_target_config() extract 
  {'172.17.0.2': {'bgp': {'asn': 65511, 'rid': '192.168.1.1', 'neighbors': [{'ipaddr': '192.168.1.2', 'remote_asn': 65512}, {'ipaddr': '192.168.3.1', 'remote_asn': 65513}]}, 'interfaces': {'GigabitEthernet3': {'ipaddr': '192.168.3.2 255.255.255.0', 'description': None, 'state': 'up'}, 'GigabitEthernet2': {'ipaddr': '192.168.1.1 255.255.255.0', 'description': None, 'state': 'up'}}}, '172.17.0.3': {'bgp': {'asn': 65512, 'rid': '192.168.2.1', 'neighbors': [{'ipaddr': '192.168.1.1', 'remote_asn': 65511}, {'ipaddr': '192.168.2.2', 'remote_asn': 65513}]}, 'interfaces': {'GigabitEthernet2': {'ipaddr': '192.168.2.1 255.255.255.0', 'description': None, 'state': 'up'}, 'GigabitEthernet3': {'ipaddr': '192.168.1.2 255.255.255.0', 'description': None, 'state': 'up'}}}, '172.17.0.4': {'bgp': {'asn': 65513, 'rid': '192.168.0.2', 'neighbors': [{'ipaddr': '192.168.3.2', 'remote_asn': 65511}, {'ipaddr': '192.168.2.1', 'remote_asn': 65512}]}, 'interfaces': {'GigabitEthernet2': {'ipaddr': '192.168.3.1 255.255.255.0', 'description': None, 'state': 'up'}, 'GigabitEthernet3': {'ipaddr': '192.168.2.2 255.255.255.0', 'description': None, 'state': 'up'}}}}
-[2023-06-23 23:31:49 - 93 - get_target_config() - DEBUG ] get_target_config() filtered 
+[2023-06-24 16:40:00 - 93 - get_target_config() - DEBUG ] get_target_config() filtered 
  {'172.17.0.3': {'bgp': {'asn': 65512, 'rid': '192.168.2.1', 'neighbors': [{'ipaddr': '192.168.1.1', 'remote_asn': 65511}, {'ipaddr': '192.168.2.2', 'remote_asn': 65513}]}, 'interfaces': {'GigabitEthernet2': {'ipaddr': '192.168.2.1 255.255.255.0', 'description': None, 'state': 'up'}, 'GigabitEthernet3': {'ipaddr': '192.168.1.2 255.255.255.0', 'description': None, 'state': 'up'}}}}
-[2023-06-23 23:31:49 - 97 - get_target_config() - DEBUG ] get_target_config() selected template Cisco_interfaces.j2
-[2023-06-23 23:31:49 - 100 - get_target_config() - DEBUG ] get_target_config() result is 
+[2023-06-24 16:40:00 - 97 - get_target_config() - DEBUG ] get_target_config() selected template Cisco_interfaces.j2
+[2023-06-24 16:40:00 - 100 - get_target_config() - DEBUG ] get_target_config() result is 
  interface GigabitEthernet2
  description None
  ip address 192.168.2.1 255.255.255.0
@@ -49,27 +53,31 @@ interface GigabitEthernet3
  ip address 192.168.1.2 255.255.255.0
  no shutdown
 
-[2023-06-23 23:31:49 - 49 - inner() - DEBUG ] *** get_target_config executed - ('Cisco',)
-[2023-06-23 23:31:50 - 126 - config_interfaces() - DEBUG ] config_interfaces() config_diff is 
+[2023-06-24 16:40:00 - 49 - inner() - DEBUG ] *** get_target_config executed - ('Cisco',)
+[2023-06-24 16:40:01 - 126 - config_interfaces() - DEBUG ] config_interfaces() config_diff is 
  +interface GigabitEthernet2
++ description None
++ ip address 192.168.2.1 255.255.255.0
 - no shutdown
 +interface GigabitEthernet3
++ description None
++ ip address 192.168.1.2 255.255.255.0
 - no shutdown...
-[2023-06-23 23:31:51 - 128 - config_interfaces() - DEBUG ] config_interfaces() executed on 172.17.0.3
-[2023-06-23 23:31:52 - 130 - config_interfaces() - DEBUG ] config_interfaces() connection to 172.17.0.3 closed
-[2023-06-23 23:31:52 - 49 - inner() - DEBUG ] *** config_interfaces executed - (<napalm.ios.ios.IOSDriver object at 0x7f4b8ad3fd00>, <Logger __main__ (DEBUG)>)
-[2023-06-23 23:31:52 - 118 - config_interfaces() - DEBUG ] config_interfaces() connecting to 172.17.0.4...
-[2023-06-23 23:31:52 - 120 - config_interfaces() - DEBUG ] config_interfaces() getting device facts for 172.17.0.4
-[2023-06-23 23:31:52 - 66 - get_config_data() - DEBUG ] get_config_data() executed for input.yml
-[2023-06-23 23:31:52 - 69 - get_config_data() - DEBUG ] get_config_data() {'172.17.0.2': {'bgp': {'asn': 65511, 'rid': '192.168.1.1', 'neighbors': [{'ipaddr': '192.168.1.2', 'remote_asn': 65512}, {'ipaddr': '192.168.3.1', 'remote_asn': 65513}]}, 'interfaces': {'GigabitEthernet3': {'ipaddr': '192.168.3.2 255.255.255.0', 'description': None, 'state': 'up'}, 'GigabitEthernet2': {'ipaddr': '192.168.1.1 255.255.255.0', 'description': None, 'state': 'up'}}}, '172.17.0.3': {'bgp': {'asn': 65512, 'rid': '192.168.2.1', 'neighbors': [{'ipaddr': '192.168.1.1', 'remote_asn': 65511}, {'ipaddr': '192.168.2.2', 'remote_asn': 65513}]}, 'interfaces': {'GigabitEthernet2': {'ipaddr': '192.168.2.1 255.255.255.0', 'description': None, 'state': 'up'}, 'GigabitEthernet3': {'ipaddr': '192.168.1.2 255.255.255.0', 'description': None, 'state': 'up'}}}, '172.17.0.4': {'bgp': {'asn': 65513, 'rid': '192.168.0.2', 'neighbors': [{'ipaddr': '192.168.3.2', 'remote_asn': 65511}, {'ipaddr': '192.168.2.1', 'remote_asn': 65512}]}, 'interfaces': {'GigabitEthernet2': {'ipaddr': '192.168.3.1 255.255.255.0', 'description': None, 'state': 'up'}, 'GigabitEthernet3': {'ipaddr': '192.168.2.2 255.255.255.0', 'description': None, 'state': 'up'}}}}
-[2023-06-23 23:31:52 - 49 - inner() - DEBUG ] *** get_config_data executed - ('input.yml', <Logger __main__ (DEBUG)>)
-[2023-06-23 23:31:52 - 89 - get_target_config() - DEBUG ] get_target_config() executed from input.yml
-[2023-06-23 23:31:52 - 90 - get_target_config() - DEBUG ] get_target_config() extract 
+[2023-06-24 16:40:02 - 128 - config_interfaces() - DEBUG ] config_interfaces() executed on 172.17.0.3
+[2023-06-24 16:40:02 - 130 - config_interfaces() - DEBUG ] config_interfaces() connection to 172.17.0.3 closed
+[2023-06-24 16:40:02 - 49 - inner() - DEBUG ] *** config_interfaces executed - (<napalm.ios.ios.IOSDriver object at 0x7fb73f354250>, <Logger __main__ (DEBUG)>)
+[2023-06-24 16:40:02 - 118 - config_interfaces() - DEBUG ] config_interfaces() connecting to 172.17.0.4...
+[2023-06-24 16:40:05 - 120 - config_interfaces() - DEBUG ] config_interfaces() getting device facts for 172.17.0.4
+[2023-06-24 16:40:05 - 66 - get_config_data() - DEBUG ] get_config_data() executed for input.yml
+[2023-06-24 16:40:05 - 69 - get_config_data() - DEBUG ] get_config_data() {'172.17.0.2': {'bgp': {'asn': 65511, 'rid': '192.168.1.1', 'neighbors': [{'ipaddr': '192.168.1.2', 'remote_asn': 65512}, {'ipaddr': '192.168.3.1', 'remote_asn': 65513}]}, 'interfaces': {'GigabitEthernet3': {'ipaddr': '192.168.3.2 255.255.255.0', 'description': None, 'state': 'up'}, 'GigabitEthernet2': {'ipaddr': '192.168.1.1 255.255.255.0', 'description': None, 'state': 'up'}}}, '172.17.0.3': {'bgp': {'asn': 65512, 'rid': '192.168.2.1', 'neighbors': [{'ipaddr': '192.168.1.1', 'remote_asn': 65511}, {'ipaddr': '192.168.2.2', 'remote_asn': 65513}]}, 'interfaces': {'GigabitEthernet2': {'ipaddr': '192.168.2.1 255.255.255.0', 'description': None, 'state': 'up'}, 'GigabitEthernet3': {'ipaddr': '192.168.1.2 255.255.255.0', 'description': None, 'state': 'up'}}}, '172.17.0.4': {'bgp': {'asn': 65513, 'rid': '192.168.0.2', 'neighbors': [{'ipaddr': '192.168.3.2', 'remote_asn': 65511}, {'ipaddr': '192.168.2.1', 'remote_asn': 65512}]}, 'interfaces': {'GigabitEthernet2': {'ipaddr': '192.168.3.1 255.255.255.0', 'description': None, 'state': 'up'}, 'GigabitEthernet3': {'ipaddr': '192.168.2.2 255.255.255.0', 'description': None, 'state': 'up'}}}}
+[2023-06-24 16:40:05 - 49 - inner() - DEBUG ] *** get_config_data executed - ('input.yml', <Logger __main__ (DEBUG)>)
+[2023-06-24 16:40:05 - 89 - get_target_config() - DEBUG ] get_target_config() executed from input.yml
+[2023-06-24 16:40:05 - 90 - get_target_config() - DEBUG ] get_target_config() extract 
  {'172.17.0.2': {'bgp': {'asn': 65511, 'rid': '192.168.1.1', 'neighbors': [{'ipaddr': '192.168.1.2', 'remote_asn': 65512}, {'ipaddr': '192.168.3.1', 'remote_asn': 65513}]}, 'interfaces': {'GigabitEthernet3': {'ipaddr': '192.168.3.2 255.255.255.0', 'description': None, 'state': 'up'}, 'GigabitEthernet2': {'ipaddr': '192.168.1.1 255.255.255.0', 'description': None, 'state': 'up'}}}, '172.17.0.3': {'bgp': {'asn': 65512, 'rid': '192.168.2.1', 'neighbors': [{'ipaddr': '192.168.1.1', 'remote_asn': 65511}, {'ipaddr': '192.168.2.2', 'remote_asn': 65513}]}, 'interfaces': {'GigabitEthernet2': {'ipaddr': '192.168.2.1 255.255.255.0', 'description': None, 'state': 'up'}, 'GigabitEthernet3': {'ipaddr': '192.168.1.2 255.255.255.0', 'description': None, 'state': 'up'}}}, '172.17.0.4': {'bgp': {'asn': 65513, 'rid': '192.168.0.2', 'neighbors': [{'ipaddr': '192.168.3.2', 'remote_asn': 65511}, {'ipaddr': '192.168.2.1', 'remote_asn': 65512}]}, 'interfaces': {'GigabitEthernet2': {'ipaddr': '192.168.3.1 255.255.255.0', 'description': None, 'state': 'up'}, 'GigabitEthernet3': {'ipaddr': '192.168.2.2 255.255.255.0', 'description': None, 'state': 'up'}}}}
-[2023-06-23 23:31:52 - 93 - get_target_config() - DEBUG ] get_target_config() filtered 
+[2023-06-24 16:40:05 - 93 - get_target_config() - DEBUG ] get_target_config() filtered 
  {'172.17.0.4': {'bgp': {'asn': 65513, 'rid': '192.168.0.2', 'neighbors': [{'ipaddr': '192.168.3.2', 'remote_asn': 65511}, {'ipaddr': '192.168.2.1', 'remote_asn': 65512}]}, 'interfaces': {'GigabitEthernet2': {'ipaddr': '192.168.3.1 255.255.255.0', 'description': None, 'state': 'up'}, 'GigabitEthernet3': {'ipaddr': '192.168.2.2 255.255.255.0', 'description': None, 'state': 'up'}}}}
-[2023-06-23 23:31:52 - 97 - get_target_config() - DEBUG ] get_target_config() selected template Cisco_interfaces.j2
-[2023-06-23 23:31:52 - 100 - get_target_config() - DEBUG ] get_target_config() result is 
+[2023-06-24 16:40:05 - 97 - get_target_config() - DEBUG ] get_target_config() selected template Cisco_interfaces.j2
+[2023-06-24 16:40:05 - 100 - get_target_config() - DEBUG ] get_target_config() result is 
  interface GigabitEthernet2
  description None
  ip address 192.168.3.1 255.255.255.0
@@ -79,48 +87,52 @@ interface GigabitEthernet3
  ip address 192.168.2.2 255.255.255.0
  no shutdown
 
-[2023-06-23 23:31:52 - 49 - inner() - DEBUG ] *** get_target_config executed - ('Cisco',)
-[2023-06-23 23:31:53 - 126 - config_interfaces() - DEBUG ] config_interfaces() config_diff is 
+[2023-06-24 16:40:05 - 49 - inner() - DEBUG ] *** get_target_config executed - ('Cisco',)
+[2023-06-24 16:40:06 - 126 - config_interfaces() - DEBUG ] config_interfaces() config_diff is 
  +interface GigabitEthernet2
++ description None
++ ip address 192.168.3.1 255.255.255.0
 - no shutdown
 +interface GigabitEthernet3
++ description None
++ ip address 192.168.2.2 255.255.255.0
 - no shutdown...
-[2023-06-23 23:31:54 - 128 - config_interfaces() - DEBUG ] config_interfaces() executed on 172.17.0.4
-[2023-06-23 23:31:55 - 130 - config_interfaces() - DEBUG ] config_interfaces() connection to 172.17.0.4 closed
-[2023-06-23 23:31:55 - 49 - inner() - DEBUG ] *** config_interfaces executed - (<napalm.ios.ios.IOSDriver object at 0x7f4b8ad3c1c0>, <Logger __main__ (DEBUG)>)
-[2023-06-23 23:31:55 - 149 - check_layer2() - DEBUG ] check_layer2() connecting to 172.17.0.2
-[2023-06-23 23:31:55 - 66 - get_config_data() - DEBUG ] get_config_data() executed for input.yml
-[2023-06-23 23:31:55 - 69 - get_config_data() - DEBUG ] get_config_data() {'172.17.0.2': {'bgp': {'asn': 65511, 'rid': '192.168.1.1', 'neighbors': [{'ipaddr': '192.168.1.2', 'remote_asn': 65512}, {'ipaddr': '192.168.3.1', 'remote_asn': 65513}]}, 'interfaces': {'GigabitEthernet3': {'ipaddr': '192.168.3.2 255.255.255.0', 'description': None, 'state': 'up'}, 'GigabitEthernet2': {'ipaddr': '192.168.1.1 255.255.255.0', 'description': None, 'state': 'up'}}}, '172.17.0.3': {'bgp': {'asn': 65512, 'rid': '192.168.2.1', 'neighbors': [{'ipaddr': '192.168.1.1', 'remote_asn': 65511}, {'ipaddr': '192.168.2.2', 'remote_asn': 65513}]}, 'interfaces': {'GigabitEthernet2': {'ipaddr': '192.168.2.1 255.255.255.0', 'description': None, 'state': 'up'}, 'GigabitEthernet3': {'ipaddr': '192.168.1.2 255.255.255.0', 'description': None, 'state': 'up'}}}, '172.17.0.4': {'bgp': {'asn': 65513, 'rid': '192.168.0.2', 'neighbors': [{'ipaddr': '192.168.3.2', 'remote_asn': 65511}, {'ipaddr': '192.168.2.1', 'remote_asn': 65512}]}, 'interfaces': {'GigabitEthernet2': {'ipaddr': '192.168.3.1 255.255.255.0', 'description': None, 'state': 'up'}, 'GigabitEthernet3': {'ipaddr': '192.168.2.2 255.255.255.0', 'description': None, 'state': 'up'}}}}
-[2023-06-23 23:31:55 - 49 - inner() - DEBUG ] *** get_config_data executed - ('input.yml', <Logger __main__ (DEBUG)>)
-[2023-06-23 23:31:55 - 174 - check_layer2() - INFO ] check_layer2() PING checks on 172.17.0.2 are ALL OK
-[2023-06-23 23:31:55 - 176 - check_layer2() - DEBUG ] check_layer2() finished on 172.17.0.2
-[2023-06-23 23:31:55 - 49 - inner() - DEBUG ] *** check_layer2 executed - (<napalm.ios.ios.IOSDriver object at 0x7f4b8ad3e920>, <Logger __main__ (DEBUG)>)
-[2023-06-23 23:31:55 - 149 - check_layer2() - DEBUG ] check_layer2() connecting to 172.17.0.3
-[2023-06-23 23:31:55 - 66 - get_config_data() - DEBUG ] get_config_data() executed for input.yml
-[2023-06-23 23:31:55 - 69 - get_config_data() - DEBUG ] get_config_data() {'172.17.0.2': {'bgp': {'asn': 65511, 'rid': '192.168.1.1', 'neighbors': [{'ipaddr': '192.168.1.2', 'remote_asn': 65512}, {'ipaddr': '192.168.3.1', 'remote_asn': 65513}]}, 'interfaces': {'GigabitEthernet3': {'ipaddr': '192.168.3.2 255.255.255.0', 'description': None, 'state': 'up'}, 'GigabitEthernet2': {'ipaddr': '192.168.1.1 255.255.255.0', 'description': None, 'state': 'up'}}}, '172.17.0.3': {'bgp': {'asn': 65512, 'rid': '192.168.2.1', 'neighbors': [{'ipaddr': '192.168.1.1', 'remote_asn': 65511}, {'ipaddr': '192.168.2.2', 'remote_asn': 65513}]}, 'interfaces': {'GigabitEthernet2': {'ipaddr': '192.168.2.1 255.255.255.0', 'description': None, 'state': 'up'}, 'GigabitEthernet3': {'ipaddr': '192.168.1.2 255.255.255.0', 'description': None, 'state': 'up'}}}, '172.17.0.4': {'bgp': {'asn': 65513, 'rid': '192.168.0.2', 'neighbors': [{'ipaddr': '192.168.3.2', 'remote_asn': 65511}, {'ipaddr': '192.168.2.1', 'remote_asn': 65512}]}, 'interfaces': {'GigabitEthernet2': {'ipaddr': '192.168.3.1 255.255.255.0', 'description': None, 'state': 'up'}, 'GigabitEthernet3': {'ipaddr': '192.168.2.2 255.255.255.0', 'description': None, 'state': 'up'}}}}
-[2023-06-23 23:31:55 - 49 - inner() - DEBUG ] *** get_config_data executed - ('input.yml', <Logger __main__ (DEBUG)>)
-[2023-06-23 23:31:56 - 174 - check_layer2() - INFO ] check_layer2() PING checks on 172.17.0.3 are ALL OK
-[2023-06-23 23:31:56 - 176 - check_layer2() - DEBUG ] check_layer2() finished on 172.17.0.3
-[2023-06-23 23:31:56 - 49 - inner() - DEBUG ] *** check_layer2 executed - (<napalm.ios.ios.IOSDriver object at 0x7f4b8ad3fd00>, <Logger __main__ (DEBUG)>)
-[2023-06-23 23:31:56 - 149 - check_layer2() - DEBUG ] check_layer2() connecting to 172.17.0.4
-[2023-06-23 23:31:56 - 66 - get_config_data() - DEBUG ] get_config_data() executed for input.yml
-[2023-06-23 23:31:56 - 69 - get_config_data() - DEBUG ] get_config_data() {'172.17.0.2': {'bgp': {'asn': 65511, 'rid': '192.168.1.1', 'neighbors': [{'ipaddr': '192.168.1.2', 'remote_asn': 65512}, {'ipaddr': '192.168.3.1', 'remote_asn': 65513}]}, 'interfaces': {'GigabitEthernet3': {'ipaddr': '192.168.3.2 255.255.255.0', 'description': None, 'state': 'up'}, 'GigabitEthernet2': {'ipaddr': '192.168.1.1 255.255.255.0', 'description': None, 'state': 'up'}}}, '172.17.0.3': {'bgp': {'asn': 65512, 'rid': '192.168.2.1', 'neighbors': [{'ipaddr': '192.168.1.1', 'remote_asn': 65511}, {'ipaddr': '192.168.2.2', 'remote_asn': 65513}]}, 'interfaces': {'GigabitEthernet2': {'ipaddr': '192.168.2.1 255.255.255.0', 'description': None, 'state': 'up'}, 'GigabitEthernet3': {'ipaddr': '192.168.1.2 255.255.255.0', 'description': None, 'state': 'up'}}}, '172.17.0.4': {'bgp': {'asn': 65513, 'rid': '192.168.0.2', 'neighbors': [{'ipaddr': '192.168.3.2', 'remote_asn': 65511}, {'ipaddr': '192.168.2.1', 'remote_asn': 65512}]}, 'interfaces': {'GigabitEthernet2': {'ipaddr': '192.168.3.1 255.255.255.0', 'description': None, 'state': 'up'}, 'GigabitEthernet3': {'ipaddr': '192.168.2.2 255.255.255.0', 'description': None, 'state': 'up'}}}}
-[2023-06-23 23:31:56 - 49 - inner() - DEBUG ] *** get_config_data executed - ('input.yml', <Logger __main__ (DEBUG)>)
-[2023-06-23 23:31:56 - 174 - check_layer2() - INFO ] check_layer2() PING checks on 172.17.0.4 are ALL OK
-[2023-06-23 23:31:56 - 176 - check_layer2() - DEBUG ] check_layer2() finished on 172.17.0.4
-[2023-06-23 23:31:56 - 49 - inner() - DEBUG ] *** check_layer2 executed - (<napalm.ios.ios.IOSDriver object at 0x7f4b8ad3c1c0>, <Logger __main__ (DEBUG)>)
-[2023-06-23 23:31:56 - 195 - config_bgp() - DEBUG ] config_bgp() connecting to 172.17.0.2...
-[2023-06-23 23:31:56 - 197 - config_bgp() - DEBUG ] config_bgp() getting device facts for 172.17.0.2
-[2023-06-23 23:31:57 - 66 - get_config_data() - DEBUG ] get_config_data() executed for input.yml
-[2023-06-23 23:31:57 - 69 - get_config_data() - DEBUG ] get_config_data() {'172.17.0.2': {'bgp': {'asn': 65511, 'rid': '192.168.1.1', 'neighbors': [{'ipaddr': '192.168.1.2', 'remote_asn': 65512}, {'ipaddr': '192.168.3.1', 'remote_asn': 65513}]}, 'interfaces': {'GigabitEthernet3': {'ipaddr': '192.168.3.2 255.255.255.0', 'description': None, 'state': 'up'}, 'GigabitEthernet2': {'ipaddr': '192.168.1.1 255.255.255.0', 'description': None, 'state': 'up'}}}, '172.17.0.3': {'bgp': {'asn': 65512, 'rid': '192.168.2.1', 'neighbors': [{'ipaddr': '192.168.1.1', 'remote_asn': 65511}, {'ipaddr': '192.168.2.2', 'remote_asn': 65513}]}, 'interfaces': {'GigabitEthernet2': {'ipaddr': '192.168.2.1 255.255.255.0', 'description': None, 'state': 'up'}, 'GigabitEthernet3': {'ipaddr': '192.168.1.2 255.255.255.0', 'description': None, 'state': 'up'}}}, '172.17.0.4': {'bgp': {'asn': 65513, 'rid': '192.168.0.2', 'neighbors': [{'ipaddr': '192.168.3.2', 'remote_asn': 65511}, {'ipaddr': '192.168.2.1', 'remote_asn': 65512}]}, 'interfaces': {'GigabitEthernet2': {'ipaddr': '192.168.3.1 255.255.255.0', 'description': None, 'state': 'up'}, 'GigabitEthernet3': {'ipaddr': '192.168.2.2 255.255.255.0', 'description': None, 'state': 'up'}}}}
-[2023-06-23 23:31:57 - 49 - inner() - DEBUG ] *** get_config_data executed - ('input.yml', <Logger __main__ (DEBUG)>)
-[2023-06-23 23:31:57 - 89 - get_target_config() - DEBUG ] get_target_config() executed from input.yml
-[2023-06-23 23:31:57 - 90 - get_target_config() - DEBUG ] get_target_config() extract 
+[2023-06-24 16:40:07 - 128 - config_interfaces() - DEBUG ] config_interfaces() executed on 172.17.0.4
+[2023-06-24 16:40:07 - 130 - config_interfaces() - DEBUG ] config_interfaces() connection to 172.17.0.4 closed
+[2023-06-24 16:40:07 - 49 - inner() - DEBUG ] *** config_interfaces executed - (<napalm.ios.ios.IOSDriver object at 0x7fb74014ad10>, <Logger __main__ (DEBUG)>)
+[2023-06-24 16:40:07 - 149 - check_layer2() - DEBUG ] check_layer2() connecting to 172.17.0.2
+[2023-06-24 16:40:08 - 66 - get_config_data() - DEBUG ] get_config_data() executed for input.yml
+[2023-06-24 16:40:08 - 69 - get_config_data() - DEBUG ] get_config_data() {'172.17.0.2': {'bgp': {'asn': 65511, 'rid': '192.168.1.1', 'neighbors': [{'ipaddr': '192.168.1.2', 'remote_asn': 65512}, {'ipaddr': '192.168.3.1', 'remote_asn': 65513}]}, 'interfaces': {'GigabitEthernet3': {'ipaddr': '192.168.3.2 255.255.255.0', 'description': None, 'state': 'up'}, 'GigabitEthernet2': {'ipaddr': '192.168.1.1 255.255.255.0', 'description': None, 'state': 'up'}}}, '172.17.0.3': {'bgp': {'asn': 65512, 'rid': '192.168.2.1', 'neighbors': [{'ipaddr': '192.168.1.1', 'remote_asn': 65511}, {'ipaddr': '192.168.2.2', 'remote_asn': 65513}]}, 'interfaces': {'GigabitEthernet2': {'ipaddr': '192.168.2.1 255.255.255.0', 'description': None, 'state': 'up'}, 'GigabitEthernet3': {'ipaddr': '192.168.1.2 255.255.255.0', 'description': None, 'state': 'up'}}}, '172.17.0.4': {'bgp': {'asn': 65513, 'rid': '192.168.0.2', 'neighbors': [{'ipaddr': '192.168.3.2', 'remote_asn': 65511}, {'ipaddr': '192.168.2.1', 'remote_asn': 65512}]}, 'interfaces': {'GigabitEthernet2': {'ipaddr': '192.168.3.1 255.255.255.0', 'description': None, 'state': 'up'}, 'GigabitEthernet3': {'ipaddr': '192.168.2.2 255.255.255.0', 'description': None, 'state': 'up'}}}}
+[2023-06-24 16:40:08 - 49 - inner() - DEBUG ] *** get_config_data executed - ('input.yml', <Logger __main__ (DEBUG)>)
+[2023-06-24 16:40:08 - 174 - check_layer2() - INFO ] check_layer2() PING checks on 172.17.0.2 are ALL OK
+[2023-06-24 16:40:08 - 176 - check_layer2() - DEBUG ] check_layer2() finished on 172.17.0.2
+[2023-06-24 16:40:08 - 49 - inner() - DEBUG ] *** check_layer2 executed - (<napalm.ios.ios.IOSDriver object at 0x7fb73f3547f0>, <Logger __main__ (DEBUG)>)
+[2023-06-24 16:40:08 - 149 - check_layer2() - DEBUG ] check_layer2() connecting to 172.17.0.3
+[2023-06-24 16:40:08 - 66 - get_config_data() - DEBUG ] get_config_data() executed for input.yml
+[2023-06-24 16:40:08 - 69 - get_config_data() - DEBUG ] get_config_data() {'172.17.0.2': {'bgp': {'asn': 65511, 'rid': '192.168.1.1', 'neighbors': [{'ipaddr': '192.168.1.2', 'remote_asn': 65512}, {'ipaddr': '192.168.3.1', 'remote_asn': 65513}]}, 'interfaces': {'GigabitEthernet3': {'ipaddr': '192.168.3.2 255.255.255.0', 'description': None, 'state': 'up'}, 'GigabitEthernet2': {'ipaddr': '192.168.1.1 255.255.255.0', 'description': None, 'state': 'up'}}}, '172.17.0.3': {'bgp': {'asn': 65512, 'rid': '192.168.2.1', 'neighbors': [{'ipaddr': '192.168.1.1', 'remote_asn': 65511}, {'ipaddr': '192.168.2.2', 'remote_asn': 65513}]}, 'interfaces': {'GigabitEthernet2': {'ipaddr': '192.168.2.1 255.255.255.0', 'description': None, 'state': 'up'}, 'GigabitEthernet3': {'ipaddr': '192.168.1.2 255.255.255.0', 'description': None, 'state': 'up'}}}, '172.17.0.4': {'bgp': {'asn': 65513, 'rid': '192.168.0.2', 'neighbors': [{'ipaddr': '192.168.3.2', 'remote_asn': 65511}, {'ipaddr': '192.168.2.1', 'remote_asn': 65512}]}, 'interfaces': {'GigabitEthernet2': {'ipaddr': '192.168.3.1 255.255.255.0', 'description': None, 'state': 'up'}, 'GigabitEthernet3': {'ipaddr': '192.168.2.2 255.255.255.0', 'description': None, 'state': 'up'}}}}
+[2023-06-24 16:40:08 - 49 - inner() - DEBUG ] *** get_config_data executed - ('input.yml', <Logger __main__ (DEBUG)>)
+[2023-06-24 16:40:08 - 174 - check_layer2() - INFO ] check_layer2() PING checks on 172.17.0.3 are ALL OK
+[2023-06-24 16:40:08 - 176 - check_layer2() - DEBUG ] check_layer2() finished on 172.17.0.3
+[2023-06-24 16:40:08 - 49 - inner() - DEBUG ] *** check_layer2 executed - (<napalm.ios.ios.IOSDriver object at 0x7fb73f354250>, <Logger __main__ (DEBUG)>)
+[2023-06-24 16:40:08 - 149 - check_layer2() - DEBUG ] check_layer2() connecting to 172.17.0.4
+[2023-06-24 16:40:09 - 66 - get_config_data() - DEBUG ] get_config_data() executed for input.yml
+[2023-06-24 16:40:09 - 69 - get_config_data() - DEBUG ] get_config_data() {'172.17.0.2': {'bgp': {'asn': 65511, 'rid': '192.168.1.1', 'neighbors': [{'ipaddr': '192.168.1.2', 'remote_asn': 65512}, {'ipaddr': '192.168.3.1', 'remote_asn': 65513}]}, 'interfaces': {'GigabitEthernet3': {'ipaddr': '192.168.3.2 255.255.255.0', 'description': None, 'state': 'up'}, 'GigabitEthernet2': {'ipaddr': '192.168.1.1 255.255.255.0', 'description': None, 'state': 'up'}}}, '172.17.0.3': {'bgp': {'asn': 65512, 'rid': '192.168.2.1', 'neighbors': [{'ipaddr': '192.168.1.1', 'remote_asn': 65511}, {'ipaddr': '192.168.2.2', 'remote_asn': 65513}]}, 'interfaces': {'GigabitEthernet2': {'ipaddr': '192.168.2.1 255.255.255.0', 'description': None, 'state': 'up'}, 'GigabitEthernet3': {'ipaddr': '192.168.1.2 255.255.255.0', 'description': None, 'state': 'up'}}}, '172.17.0.4': {'bgp': {'asn': 65513, 'rid': '192.168.0.2', 'neighbors': [{'ipaddr': '192.168.3.2', 'remote_asn': 65511}, {'ipaddr': '192.168.2.1', 'remote_asn': 65512}]}, 'interfaces': {'GigabitEthernet2': {'ipaddr': '192.168.3.1 255.255.255.0', 'description': None, 'state': 'up'}, 'GigabitEthernet3': {'ipaddr': '192.168.2.2 255.255.255.0', 'description': None, 'state': 'up'}}}}
+[2023-06-24 16:40:09 - 49 - inner() - DEBUG ] *** get_config_data executed - ('input.yml', <Logger __main__ (DEBUG)>)
+[2023-06-24 16:40:09 - 174 - check_layer2() - INFO ] check_layer2() PING checks on 172.17.0.4 are ALL OK
+[2023-06-24 16:40:09 - 176 - check_layer2() - DEBUG ] check_layer2() finished on 172.17.0.4
+[2023-06-24 16:40:09 - 49 - inner() - DEBUG ] *** check_layer2 executed - (<napalm.ios.ios.IOSDriver object at 0x7fb74014ad10>, <Logger __main__ (DEBUG)>)
+[2023-06-24 16:40:09 - 194 - config_bgp() - DEBUG ] config_bgp() connecting to 172.17.0.2...
+[2023-06-24 16:40:09 - 196 - config_bgp() - DEBUG ] config_bgp() getting device facts for 172.17.0.2
+[2023-06-24 16:40:10 - 66 - get_config_data() - DEBUG ] get_config_data() executed for input.yml
+[2023-06-24 16:40:10 - 69 - get_config_data() - DEBUG ] get_config_data() {'172.17.0.2': {'bgp': {'asn': 65511, 'rid': '192.168.1.1', 'neighbors': [{'ipaddr': '192.168.1.2', 'remote_asn': 65512}, {'ipaddr': '192.168.3.1', 'remote_asn': 65513}]}, 'interfaces': {'GigabitEthernet3': {'ipaddr': '192.168.3.2 255.255.255.0', 'description': None, 'state': 'up'}, 'GigabitEthernet2': {'ipaddr': '192.168.1.1 255.255.255.0', 'description': None, 'state': 'up'}}}, '172.17.0.3': {'bgp': {'asn': 65512, 'rid': '192.168.2.1', 'neighbors': [{'ipaddr': '192.168.1.1', 'remote_asn': 65511}, {'ipaddr': '192.168.2.2', 'remote_asn': 65513}]}, 'interfaces': {'GigabitEthernet2': {'ipaddr': '192.168.2.1 255.255.255.0', 'description': None, 'state': 'up'}, 'GigabitEthernet3': {'ipaddr': '192.168.1.2 255.255.255.0', 'description': None, 'state': 'up'}}}, '172.17.0.4': {'bgp': {'asn': 65513, 'rid': '192.168.0.2', 'neighbors': [{'ipaddr': '192.168.3.2', 'remote_asn': 65511}, {'ipaddr': '192.168.2.1', 'remote_asn': 65512}]}, 'interfaces': {'GigabitEthernet2': {'ipaddr': '192.168.3.1 255.255.255.0', 'description': None, 'state': 'up'}, 'GigabitEthernet3': {'ipaddr': '192.168.2.2 255.255.255.0', 'description': None, 'state': 'up'}}}}
+[2023-06-24 16:40:10 - 49 - inner() - DEBUG ] *** get_config_data executed - ('input.yml', <Logger __main__ (DEBUG)>)
+[2023-06-24 16:40:10 - 89 - get_target_config() - DEBUG ] get_target_config() executed from input.yml
+[2023-06-24 16:40:10 - 90 - get_target_config() - DEBUG ] get_target_config() extract 
  {'172.17.0.2': {'bgp': {'asn': 65511, 'rid': '192.168.1.1', 'neighbors': [{'ipaddr': '192.168.1.2', 'remote_asn': 65512}, {'ipaddr': '192.168.3.1', 'remote_asn': 65513}]}, 'interfaces': {'GigabitEthernet3': {'ipaddr': '192.168.3.2 255.255.255.0', 'description': None, 'state': 'up'}, 'GigabitEthernet2': {'ipaddr': '192.168.1.1 255.255.255.0', 'description': None, 'state': 'up'}}}, '172.17.0.3': {'bgp': {'asn': 65512, 'rid': '192.168.2.1', 'neighbors': [{'ipaddr': '192.168.1.1', 'remote_asn': 65511}, {'ipaddr': '192.168.2.2', 'remote_asn': 65513}]}, 'interfaces': {'GigabitEthernet2': {'ipaddr': '192.168.2.1 255.255.255.0', 'description': None, 'state': 'up'}, 'GigabitEthernet3': {'ipaddr': '192.168.1.2 255.255.255.0', 'description': None, 'state': 'up'}}}, '172.17.0.4': {'bgp': {'asn': 65513, 'rid': '192.168.0.2', 'neighbors': [{'ipaddr': '192.168.3.2', 'remote_asn': 65511}, {'ipaddr': '192.168.2.1', 'remote_asn': 65512}]}, 'interfaces': {'GigabitEthernet2': {'ipaddr': '192.168.3.1 255.255.255.0', 'description': None, 'state': 'up'}, 'GigabitEthernet3': {'ipaddr': '192.168.2.2 255.255.255.0', 'description': None, 'state': 'up'}}}}
-[2023-06-23 23:31:57 - 93 - get_target_config() - DEBUG ] get_target_config() filtered 
+[2023-06-24 16:40:10 - 93 - get_target_config() - DEBUG ] get_target_config() filtered 
  {'172.17.0.2': {'bgp': {'asn': 65511, 'rid': '192.168.1.1', 'neighbors': [{'ipaddr': '192.168.1.2', 'remote_asn': 65512}, {'ipaddr': '192.168.3.1', 'remote_asn': 65513}]}, 'interfaces': {'GigabitEthernet3': {'ipaddr': '192.168.3.2 255.255.255.0', 'description': None, 'state': 'up'}, 'GigabitEthernet2': {'ipaddr': '192.168.1.1 255.255.255.0', 'description': None, 'state': 'up'}}}}
-[2023-06-23 23:31:57 - 97 - get_target_config() - DEBUG ] get_target_config() selected template Cisco_bgp.j2
-[2023-06-23 23:31:57 - 100 - get_target_config() - DEBUG ] get_target_config() result is 
+[2023-06-24 16:40:10 - 97 - get_target_config() - DEBUG ] get_target_config() selected template Cisco_bgp.j2
+[2023-06-24 16:40:10 - 100 - get_target_config() - DEBUG ] get_target_config() result is 
  router bgp 65511
  neighbor 192.168.1.2 remote-as 65512
  !
@@ -131,22 +143,22 @@ interface GigabitEthernet3
   neighbor 192.168.3.1 activate
  exit-address-family
 
-[2023-06-23 23:31:57 - 49 - inner() - DEBUG ] *** get_target_config executed - ('Cisco',)
-[2023-06-23 23:31:59 - 205 - config_bgp() - DEBUG ] config_bgp() executed on 172.17.0.2
-[2023-06-23 23:31:59 - 207 - config_bgp() - DEBUG ] config_bgp() connection to 172.17.0.2 closed
-[2023-06-23 23:31:59 - 49 - inner() - DEBUG ] *** config_bgp executed - (<napalm.ios.ios.IOSDriver object at 0x7f4b8ad3e920>, <Logger __main__ (DEBUG)>)
-[2023-06-23 23:31:59 - 195 - config_bgp() - DEBUG ] config_bgp() connecting to 172.17.0.3...
-[2023-06-23 23:31:59 - 197 - config_bgp() - DEBUG ] config_bgp() getting device facts for 172.17.0.3
-[2023-06-23 23:32:00 - 66 - get_config_data() - DEBUG ] get_config_data() executed for input.yml
-[2023-06-23 23:32:00 - 69 - get_config_data() - DEBUG ] get_config_data() {'172.17.0.2': {'bgp': {'asn': 65511, 'rid': '192.168.1.1', 'neighbors': [{'ipaddr': '192.168.1.2', 'remote_asn': 65512}, {'ipaddr': '192.168.3.1', 'remote_asn': 65513}]}, 'interfaces': {'GigabitEthernet3': {'ipaddr': '192.168.3.2 255.255.255.0', 'description': None, 'state': 'up'}, 'GigabitEthernet2': {'ipaddr': '192.168.1.1 255.255.255.0', 'description': None, 'state': 'up'}}}, '172.17.0.3': {'bgp': {'asn': 65512, 'rid': '192.168.2.1', 'neighbors': [{'ipaddr': '192.168.1.1', 'remote_asn': 65511}, {'ipaddr': '192.168.2.2', 'remote_asn': 65513}]}, 'interfaces': {'GigabitEthernet2': {'ipaddr': '192.168.2.1 255.255.255.0', 'description': None, 'state': 'up'}, 'GigabitEthernet3': {'ipaddr': '192.168.1.2 255.255.255.0', 'description': None, 'state': 'up'}}}, '172.17.0.4': {'bgp': {'asn': 65513, 'rid': '192.168.0.2', 'neighbors': [{'ipaddr': '192.168.3.2', 'remote_asn': 65511}, {'ipaddr': '192.168.2.1', 'remote_asn': 65512}]}, 'interfaces': {'GigabitEthernet2': {'ipaddr': '192.168.3.1 255.255.255.0', 'description': None, 'state': 'up'}, 'GigabitEthernet3': {'ipaddr': '192.168.2.2 255.255.255.0', 'description': None, 'state': 'up'}}}}
-[2023-06-23 23:32:00 - 49 - inner() - DEBUG ] *** get_config_data executed - ('input.yml', <Logger __main__ (DEBUG)>)
-[2023-06-23 23:32:00 - 89 - get_target_config() - DEBUG ] get_target_config() executed from input.yml
-[2023-06-23 23:32:00 - 90 - get_target_config() - DEBUG ] get_target_config() extract 
+[2023-06-24 16:40:10 - 49 - inner() - DEBUG ] *** get_target_config executed - ('Cisco',)
+[2023-06-24 16:40:12 - 204 - config_bgp() - DEBUG ] config_bgp() executed on 172.17.0.2
+[2023-06-24 16:40:12 - 206 - config_bgp() - DEBUG ] config_bgp() connection to 172.17.0.2 closed
+[2023-06-24 16:40:12 - 49 - inner() - DEBUG ] *** config_bgp executed - (<napalm.ios.ios.IOSDriver object at 0x7fb73f3547f0>, <Logger __main__ (DEBUG)>)
+[2023-06-24 16:40:12 - 194 - config_bgp() - DEBUG ] config_bgp() connecting to 172.17.0.3...
+[2023-06-24 16:40:12 - 196 - config_bgp() - DEBUG ] config_bgp() getting device facts for 172.17.0.3
+[2023-06-24 16:40:13 - 66 - get_config_data() - DEBUG ] get_config_data() executed for input.yml
+[2023-06-24 16:40:13 - 69 - get_config_data() - DEBUG ] get_config_data() {'172.17.0.2': {'bgp': {'asn': 65511, 'rid': '192.168.1.1', 'neighbors': [{'ipaddr': '192.168.1.2', 'remote_asn': 65512}, {'ipaddr': '192.168.3.1', 'remote_asn': 65513}]}, 'interfaces': {'GigabitEthernet3': {'ipaddr': '192.168.3.2 255.255.255.0', 'description': None, 'state': 'up'}, 'GigabitEthernet2': {'ipaddr': '192.168.1.1 255.255.255.0', 'description': None, 'state': 'up'}}}, '172.17.0.3': {'bgp': {'asn': 65512, 'rid': '192.168.2.1', 'neighbors': [{'ipaddr': '192.168.1.1', 'remote_asn': 65511}, {'ipaddr': '192.168.2.2', 'remote_asn': 65513}]}, 'interfaces': {'GigabitEthernet2': {'ipaddr': '192.168.2.1 255.255.255.0', 'description': None, 'state': 'up'}, 'GigabitEthernet3': {'ipaddr': '192.168.1.2 255.255.255.0', 'description': None, 'state': 'up'}}}, '172.17.0.4': {'bgp': {'asn': 65513, 'rid': '192.168.0.2', 'neighbors': [{'ipaddr': '192.168.3.2', 'remote_asn': 65511}, {'ipaddr': '192.168.2.1', 'remote_asn': 65512}]}, 'interfaces': {'GigabitEthernet2': {'ipaddr': '192.168.3.1 255.255.255.0', 'description': None, 'state': 'up'}, 'GigabitEthernet3': {'ipaddr': '192.168.2.2 255.255.255.0', 'description': None, 'state': 'up'}}}}
+[2023-06-24 16:40:13 - 49 - inner() - DEBUG ] *** get_config_data executed - ('input.yml', <Logger __main__ (DEBUG)>)
+[2023-06-24 16:40:13 - 89 - get_target_config() - DEBUG ] get_target_config() executed from input.yml
+[2023-06-24 16:40:13 - 90 - get_target_config() - DEBUG ] get_target_config() extract 
  {'172.17.0.2': {'bgp': {'asn': 65511, 'rid': '192.168.1.1', 'neighbors': [{'ipaddr': '192.168.1.2', 'remote_asn': 65512}, {'ipaddr': '192.168.3.1', 'remote_asn': 65513}]}, 'interfaces': {'GigabitEthernet3': {'ipaddr': '192.168.3.2 255.255.255.0', 'description': None, 'state': 'up'}, 'GigabitEthernet2': {'ipaddr': '192.168.1.1 255.255.255.0', 'description': None, 'state': 'up'}}}, '172.17.0.3': {'bgp': {'asn': 65512, 'rid': '192.168.2.1', 'neighbors': [{'ipaddr': '192.168.1.1', 'remote_asn': 65511}, {'ipaddr': '192.168.2.2', 'remote_asn': 65513}]}, 'interfaces': {'GigabitEthernet2': {'ipaddr': '192.168.2.1 255.255.255.0', 'description': None, 'state': 'up'}, 'GigabitEthernet3': {'ipaddr': '192.168.1.2 255.255.255.0', 'description': None, 'state': 'up'}}}, '172.17.0.4': {'bgp': {'asn': 65513, 'rid': '192.168.0.2', 'neighbors': [{'ipaddr': '192.168.3.2', 'remote_asn': 65511}, {'ipaddr': '192.168.2.1', 'remote_asn': 65512}]}, 'interfaces': {'GigabitEthernet2': {'ipaddr': '192.168.3.1 255.255.255.0', 'description': None, 'state': 'up'}, 'GigabitEthernet3': {'ipaddr': '192.168.2.2 255.255.255.0', 'description': None, 'state': 'up'}}}}
-[2023-06-23 23:32:00 - 93 - get_target_config() - DEBUG ] get_target_config() filtered 
+[2023-06-24 16:40:13 - 93 - get_target_config() - DEBUG ] get_target_config() filtered 
  {'172.17.0.3': {'bgp': {'asn': 65512, 'rid': '192.168.2.1', 'neighbors': [{'ipaddr': '192.168.1.1', 'remote_asn': 65511}, {'ipaddr': '192.168.2.2', 'remote_asn': 65513}]}, 'interfaces': {'GigabitEthernet2': {'ipaddr': '192.168.2.1 255.255.255.0', 'description': None, 'state': 'up'}, 'GigabitEthernet3': {'ipaddr': '192.168.1.2 255.255.255.0', 'description': None, 'state': 'up'}}}}
-[2023-06-23 23:32:00 - 97 - get_target_config() - DEBUG ] get_target_config() selected template Cisco_bgp.j2
-[2023-06-23 23:32:00 - 100 - get_target_config() - DEBUG ] get_target_config() result is 
+[2023-06-24 16:40:13 - 97 - get_target_config() - DEBUG ] get_target_config() selected template Cisco_bgp.j2
+[2023-06-24 16:40:13 - 100 - get_target_config() - DEBUG ] get_target_config() result is 
  router bgp 65512
  neighbor 192.168.1.1 remote-as 65511
  !
@@ -157,22 +169,22 @@ interface GigabitEthernet3
   neighbor 192.168.2.2 activate
  exit-address-family
 
-[2023-06-23 23:32:00 - 49 - inner() - DEBUG ] *** get_target_config executed - ('Cisco',)
-[2023-06-23 23:32:02 - 205 - config_bgp() - DEBUG ] config_bgp() executed on 172.17.0.3
-[2023-06-23 23:32:02 - 207 - config_bgp() - DEBUG ] config_bgp() connection to 172.17.0.3 closed
-[2023-06-23 23:32:02 - 49 - inner() - DEBUG ] *** config_bgp executed - (<napalm.ios.ios.IOSDriver object at 0x7f4b8ad3fd00>, <Logger __main__ (DEBUG)>)
-[2023-06-23 23:32:02 - 195 - config_bgp() - DEBUG ] config_bgp() connecting to 172.17.0.4...
-[2023-06-23 23:32:03 - 197 - config_bgp() - DEBUG ] config_bgp() getting device facts for 172.17.0.4
-[2023-06-23 23:32:03 - 66 - get_config_data() - DEBUG ] get_config_data() executed for input.yml
-[2023-06-23 23:32:03 - 69 - get_config_data() - DEBUG ] get_config_data() {'172.17.0.2': {'bgp': {'asn': 65511, 'rid': '192.168.1.1', 'neighbors': [{'ipaddr': '192.168.1.2', 'remote_asn': 65512}, {'ipaddr': '192.168.3.1', 'remote_asn': 65513}]}, 'interfaces': {'GigabitEthernet3': {'ipaddr': '192.168.3.2 255.255.255.0', 'description': None, 'state': 'up'}, 'GigabitEthernet2': {'ipaddr': '192.168.1.1 255.255.255.0', 'description': None, 'state': 'up'}}}, '172.17.0.3': {'bgp': {'asn': 65512, 'rid': '192.168.2.1', 'neighbors': [{'ipaddr': '192.168.1.1', 'remote_asn': 65511}, {'ipaddr': '192.168.2.2', 'remote_asn': 65513}]}, 'interfaces': {'GigabitEthernet2': {'ipaddr': '192.168.2.1 255.255.255.0', 'description': None, 'state': 'up'}, 'GigabitEthernet3': {'ipaddr': '192.168.1.2 255.255.255.0', 'description': None, 'state': 'up'}}}, '172.17.0.4': {'bgp': {'asn': 65513, 'rid': '192.168.0.2', 'neighbors': [{'ipaddr': '192.168.3.2', 'remote_asn': 65511}, {'ipaddr': '192.168.2.1', 'remote_asn': 65512}]}, 'interfaces': {'GigabitEthernet2': {'ipaddr': '192.168.3.1 255.255.255.0', 'description': None, 'state': 'up'}, 'GigabitEthernet3': {'ipaddr': '192.168.2.2 255.255.255.0', 'description': None, 'state': 'up'}}}}
-[2023-06-23 23:32:03 - 49 - inner() - DEBUG ] *** get_config_data executed - ('input.yml', <Logger __main__ (DEBUG)>)
-[2023-06-23 23:32:03 - 89 - get_target_config() - DEBUG ] get_target_config() executed from input.yml
-[2023-06-23 23:32:03 - 90 - get_target_config() - DEBUG ] get_target_config() extract 
+[2023-06-24 16:40:13 - 49 - inner() - DEBUG ] *** get_target_config executed - ('Cisco',)
+[2023-06-24 16:40:15 - 204 - config_bgp() - DEBUG ] config_bgp() executed on 172.17.0.3
+[2023-06-24 16:40:15 - 206 - config_bgp() - DEBUG ] config_bgp() connection to 172.17.0.3 closed
+[2023-06-24 16:40:15 - 49 - inner() - DEBUG ] *** config_bgp executed - (<napalm.ios.ios.IOSDriver object at 0x7fb73f354250>, <Logger __main__ (DEBUG)>)
+[2023-06-24 16:40:15 - 194 - config_bgp() - DEBUG ] config_bgp() connecting to 172.17.0.4...
+[2023-06-24 16:40:15 - 196 - config_bgp() - DEBUG ] config_bgp() getting device facts for 172.17.0.4
+[2023-06-24 16:40:16 - 66 - get_config_data() - DEBUG ] get_config_data() executed for input.yml
+[2023-06-24 16:40:16 - 69 - get_config_data() - DEBUG ] get_config_data() {'172.17.0.2': {'bgp': {'asn': 65511, 'rid': '192.168.1.1', 'neighbors': [{'ipaddr': '192.168.1.2', 'remote_asn': 65512}, {'ipaddr': '192.168.3.1', 'remote_asn': 65513}]}, 'interfaces': {'GigabitEthernet3': {'ipaddr': '192.168.3.2 255.255.255.0', 'description': None, 'state': 'up'}, 'GigabitEthernet2': {'ipaddr': '192.168.1.1 255.255.255.0', 'description': None, 'state': 'up'}}}, '172.17.0.3': {'bgp': {'asn': 65512, 'rid': '192.168.2.1', 'neighbors': [{'ipaddr': '192.168.1.1', 'remote_asn': 65511}, {'ipaddr': '192.168.2.2', 'remote_asn': 65513}]}, 'interfaces': {'GigabitEthernet2': {'ipaddr': '192.168.2.1 255.255.255.0', 'description': None, 'state': 'up'}, 'GigabitEthernet3': {'ipaddr': '192.168.1.2 255.255.255.0', 'description': None, 'state': 'up'}}}, '172.17.0.4': {'bgp': {'asn': 65513, 'rid': '192.168.0.2', 'neighbors': [{'ipaddr': '192.168.3.2', 'remote_asn': 65511}, {'ipaddr': '192.168.2.1', 'remote_asn': 65512}]}, 'interfaces': {'GigabitEthernet2': {'ipaddr': '192.168.3.1 255.255.255.0', 'description': None, 'state': 'up'}, 'GigabitEthernet3': {'ipaddr': '192.168.2.2 255.255.255.0', 'description': None, 'state': 'up'}}}}
+[2023-06-24 16:40:16 - 49 - inner() - DEBUG ] *** get_config_data executed - ('input.yml', <Logger __main__ (DEBUG)>)
+[2023-06-24 16:40:16 - 89 - get_target_config() - DEBUG ] get_target_config() executed from input.yml
+[2023-06-24 16:40:16 - 90 - get_target_config() - DEBUG ] get_target_config() extract 
  {'172.17.0.2': {'bgp': {'asn': 65511, 'rid': '192.168.1.1', 'neighbors': [{'ipaddr': '192.168.1.2', 'remote_asn': 65512}, {'ipaddr': '192.168.3.1', 'remote_asn': 65513}]}, 'interfaces': {'GigabitEthernet3': {'ipaddr': '192.168.3.2 255.255.255.0', 'description': None, 'state': 'up'}, 'GigabitEthernet2': {'ipaddr': '192.168.1.1 255.255.255.0', 'description': None, 'state': 'up'}}}, '172.17.0.3': {'bgp': {'asn': 65512, 'rid': '192.168.2.1', 'neighbors': [{'ipaddr': '192.168.1.1', 'remote_asn': 65511}, {'ipaddr': '192.168.2.2', 'remote_asn': 65513}]}, 'interfaces': {'GigabitEthernet2': {'ipaddr': '192.168.2.1 255.255.255.0', 'description': None, 'state': 'up'}, 'GigabitEthernet3': {'ipaddr': '192.168.1.2 255.255.255.0', 'description': None, 'state': 'up'}}}, '172.17.0.4': {'bgp': {'asn': 65513, 'rid': '192.168.0.2', 'neighbors': [{'ipaddr': '192.168.3.2', 'remote_asn': 65511}, {'ipaddr': '192.168.2.1', 'remote_asn': 65512}]}, 'interfaces': {'GigabitEthernet2': {'ipaddr': '192.168.3.1 255.255.255.0', 'description': None, 'state': 'up'}, 'GigabitEthernet3': {'ipaddr': '192.168.2.2 255.255.255.0', 'description': None, 'state': 'up'}}}}
-[2023-06-23 23:32:03 - 93 - get_target_config() - DEBUG ] get_target_config() filtered 
+[2023-06-24 16:40:16 - 93 - get_target_config() - DEBUG ] get_target_config() filtered 
  {'172.17.0.4': {'bgp': {'asn': 65513, 'rid': '192.168.0.2', 'neighbors': [{'ipaddr': '192.168.3.2', 'remote_asn': 65511}, {'ipaddr': '192.168.2.1', 'remote_asn': 65512}]}, 'interfaces': {'GigabitEthernet2': {'ipaddr': '192.168.3.1 255.255.255.0', 'description': None, 'state': 'up'}, 'GigabitEthernet3': {'ipaddr': '192.168.2.2 255.255.255.0', 'description': None, 'state': 'up'}}}}
-[2023-06-23 23:32:03 - 97 - get_target_config() - DEBUG ] get_target_config() selected template Cisco_bgp.j2
-[2023-06-23 23:32:03 - 100 - get_target_config() - DEBUG ] get_target_config() result is 
+[2023-06-24 16:40:16 - 97 - get_target_config() - DEBUG ] get_target_config() selected template Cisco_bgp.j2
+[2023-06-24 16:40:16 - 100 - get_target_config() - DEBUG ] get_target_config() result is 
  router bgp 65513
  neighbor 192.168.3.2 remote-as 65511
  !
@@ -183,13 +195,13 @@ interface GigabitEthernet3
   neighbor 192.168.2.1 activate
  exit-address-family
 
-[2023-06-23 23:32:03 - 49 - inner() - DEBUG ] *** get_target_config executed - ('Cisco',)
-[2023-06-23 23:32:05 - 205 - config_bgp() - DEBUG ] config_bgp() executed on 172.17.0.4
-[2023-06-23 23:32:05 - 207 - config_bgp() - DEBUG ] config_bgp() connection to 172.17.0.4 closed
-[2023-06-23 23:32:05 - 49 - inner() - DEBUG ] *** config_bgp executed - (<napalm.ios.ios.IOSDriver object at 0x7f4b8ad3c1c0>, <Logger __main__ (DEBUG)>)
-[2023-06-23 23:32:05 - 222 - check_bgp() - DEBUG ] check_bgp() connecting to 172.17.0.2...
-[2023-06-23 23:32:06 - 224 - check_bgp() - DEBUG ] check_bgp() getting device facts for 172.17.0.2
-[2023-06-23 23:32:07 - 229 - check_bgp() - DEBUG ] check_bgp() JSON from 172.17.0.2 
+[2023-06-24 16:40:16 - 49 - inner() - DEBUG ] *** get_target_config executed - ('Cisco',)
+[2023-06-24 16:40:18 - 204 - config_bgp() - DEBUG ] config_bgp() executed on 172.17.0.4
+[2023-06-24 16:40:18 - 206 - config_bgp() - DEBUG ] config_bgp() connection to 172.17.0.4 closed
+[2023-06-24 16:40:18 - 49 - inner() - DEBUG ] *** config_bgp executed - (<napalm.ios.ios.IOSDriver object at 0x7fb74014ad10>, <Logger __main__ (DEBUG)>)
+[2023-06-24 16:40:18 - 221 - check_bgp() - DEBUG ] check_bgp() connecting to 172.17.0.2...
+[2023-06-24 16:40:19 - 223 - check_bgp() - DEBUG ] check_bgp() getting device facts for 172.17.0.2
+[2023-06-24 16:40:20 - 228 - check_bgp() - DEBUG ] check_bgp() JSON from 172.17.0.2 
  {
     "global": {
         "router_id": "192.168.3.2",
@@ -197,48 +209,48 @@ interface GigabitEthernet3
             "192.168.1.2": {
                 "local_as": 65511,
                 "remote_as": 65512,
-                "remote_id": "192.168.2.1",
-                "is_up": true,
+                "remote_id": "0.0.0.0",
+                "is_up": false,
                 "is_enabled": true,
                 "description": "",
-                "uptime": 3485,
+                "uptime": -1,
                 "address_family": {
                     "ipv4 unicast": {
-                        "received_prefixes": 0,
-                        "accepted_prefixes": 0,
-                        "sent_prefixes": 0
+                        "received_prefixes": -1,
+                        "accepted_prefixes": -1,
+                        "sent_prefixes": -1
                     }
                 }
             },
             "192.168.3.1": {
                 "local_as": 65511,
                 "remote_as": 65513,
-                "remote_id": "192.168.3.1",
-                "is_up": true,
+                "remote_id": "0.0.0.0",
+                "is_up": false,
                 "is_enabled": true,
                 "description": "",
-                "uptime": 3483,
+                "uptime": -1,
                 "address_family": {
                     "ipv4 unicast": {
-                        "received_prefixes": 0,
-                        "accepted_prefixes": 0,
-                        "sent_prefixes": 0
+                        "received_prefixes": -1,
+                        "accepted_prefixes": -1,
+                        "sent_prefixes": -1
                     }
                 }
             }
         }
     }
 }
-[2023-06-23 23:32:07 - 66 - get_config_data() - DEBUG ] get_config_data() executed for input.yml
-[2023-06-23 23:32:07 - 69 - get_config_data() - DEBUG ] get_config_data() {'172.17.0.2': {'bgp': {'asn': 65511, 'rid': '192.168.1.1', 'neighbors': [{'ipaddr': '192.168.1.2', 'remote_asn': 65512}, {'ipaddr': '192.168.3.1', 'remote_asn': 65513}]}, 'interfaces': {'GigabitEthernet3': {'ipaddr': '192.168.3.2 255.255.255.0', 'description': None, 'state': 'up'}, 'GigabitEthernet2': {'ipaddr': '192.168.1.1 255.255.255.0', 'description': None, 'state': 'up'}}}, '172.17.0.3': {'bgp': {'asn': 65512, 'rid': '192.168.2.1', 'neighbors': [{'ipaddr': '192.168.1.1', 'remote_asn': 65511}, {'ipaddr': '192.168.2.2', 'remote_asn': 65513}]}, 'interfaces': {'GigabitEthernet2': {'ipaddr': '192.168.2.1 255.255.255.0', 'description': None, 'state': 'up'}, 'GigabitEthernet3': {'ipaddr': '192.168.1.2 255.255.255.0', 'description': None, 'state': 'up'}}}, '172.17.0.4': {'bgp': {'asn': 65513, 'rid': '192.168.0.2', 'neighbors': [{'ipaddr': '192.168.3.2', 'remote_asn': 65511}, {'ipaddr': '192.168.2.1', 'remote_asn': 65512}]}, 'interfaces': {'GigabitEthernet2': {'ipaddr': '192.168.3.1 255.255.255.0', 'description': None, 'state': 'up'}, 'GigabitEthernet3': {'ipaddr': '192.168.2.2 255.255.255.0', 'description': None, 'state': 'up'}}}}
-[2023-06-23 23:32:07 - 49 - inner() - DEBUG ] *** get_config_data executed - ('input.yml', <Logger __main__ (DEBUG)>)
-[2023-06-23 23:32:07 - 235 - check_bgp() - DEBUG ] check_bgp() connection to 172.17.0.2 closed
-[2023-06-23 23:32:07 - 249 - check_bgp() - DEBUG ] check_bgp() executed on 172.17.0.2
-[2023-06-23 23:32:07 - 250 - check_bgp() - INFO ] check_bgp() BGP peer validation for 172.17.0.2 is OK
-[2023-06-23 23:32:07 - 49 - inner() - DEBUG ] *** check_bgp executed - (<napalm.ios.ios.IOSDriver object at 0x7f4b8ad3e920>, <Logger __main__ (DEBUG)>)
-[2023-06-23 23:32:07 - 222 - check_bgp() - DEBUG ] check_bgp() connecting to 172.17.0.3...
-[2023-06-23 23:32:07 - 224 - check_bgp() - DEBUG ] check_bgp() getting device facts for 172.17.0.3
-[2023-06-23 23:32:08 - 229 - check_bgp() - DEBUG ] check_bgp() JSON from 172.17.0.3 
+[2023-06-24 16:40:20 - 66 - get_config_data() - DEBUG ] get_config_data() executed for input.yml
+[2023-06-24 16:40:20 - 69 - get_config_data() - DEBUG ] get_config_data() {'172.17.0.2': {'bgp': {'asn': 65511, 'rid': '192.168.1.1', 'neighbors': [{'ipaddr': '192.168.1.2', 'remote_asn': 65512}, {'ipaddr': '192.168.3.1', 'remote_asn': 65513}]}, 'interfaces': {'GigabitEthernet3': {'ipaddr': '192.168.3.2 255.255.255.0', 'description': None, 'state': 'up'}, 'GigabitEthernet2': {'ipaddr': '192.168.1.1 255.255.255.0', 'description': None, 'state': 'up'}}}, '172.17.0.3': {'bgp': {'asn': 65512, 'rid': '192.168.2.1', 'neighbors': [{'ipaddr': '192.168.1.1', 'remote_asn': 65511}, {'ipaddr': '192.168.2.2', 'remote_asn': 65513}]}, 'interfaces': {'GigabitEthernet2': {'ipaddr': '192.168.2.1 255.255.255.0', 'description': None, 'state': 'up'}, 'GigabitEthernet3': {'ipaddr': '192.168.1.2 255.255.255.0', 'description': None, 'state': 'up'}}}, '172.17.0.4': {'bgp': {'asn': 65513, 'rid': '192.168.0.2', 'neighbors': [{'ipaddr': '192.168.3.2', 'remote_asn': 65511}, {'ipaddr': '192.168.2.1', 'remote_asn': 65512}]}, 'interfaces': {'GigabitEthernet2': {'ipaddr': '192.168.3.1 255.255.255.0', 'description': None, 'state': 'up'}, 'GigabitEthernet3': {'ipaddr': '192.168.2.2 255.255.255.0', 'description': None, 'state': 'up'}}}}
+[2023-06-24 16:40:20 - 49 - inner() - DEBUG ] *** get_config_data executed - ('input.yml', <Logger __main__ (DEBUG)>)
+[2023-06-24 16:40:20 - 234 - check_bgp() - DEBUG ] check_bgp() connection to 172.17.0.2 closed
+[2023-06-24 16:40:20 - 252 - check_bgp() - DEBUG ] check_bgp() executed on 172.17.0.2
+[2023-06-24 16:40:20 - 253 - check_bgp() - INFO ] check_bgp() BGP peer validation for 172.17.0.2 is OK
+[2023-06-24 16:40:20 - 49 - inner() - DEBUG ] *** check_bgp executed - (<napalm.ios.ios.IOSDriver object at 0x7fb73f3547f0>, <Logger __main__ (DEBUG)>)
+[2023-06-24 16:40:20 - 221 - check_bgp() - DEBUG ] check_bgp() connecting to 172.17.0.3...
+[2023-06-24 16:40:20 - 223 - check_bgp() - DEBUG ] check_bgp() getting device facts for 172.17.0.3
+[2023-06-24 16:40:21 - 228 - check_bgp() - DEBUG ] check_bgp() JSON from 172.17.0.3 
  {
     "global": {
         "router_id": "192.168.2.1",
@@ -246,48 +258,48 @@ interface GigabitEthernet3
             "192.168.1.1": {
                 "local_as": 65512,
                 "remote_as": 65511,
-                "remote_id": "192.168.3.2",
-                "is_up": true,
+                "remote_id": "0.0.0.0",
+                "is_up": false,
                 "is_enabled": true,
                 "description": "",
-                "uptime": 3487,
+                "uptime": -1,
                 "address_family": {
                     "ipv4 unicast": {
-                        "received_prefixes": 0,
-                        "accepted_prefixes": 0,
-                        "sent_prefixes": 0
+                        "received_prefixes": -1,
+                        "accepted_prefixes": -1,
+                        "sent_prefixes": -1
                     }
                 }
             },
             "192.168.2.2": {
                 "local_as": 65512,
                 "remote_as": 65513,
-                "remote_id": "192.168.3.1",
-                "is_up": true,
+                "remote_id": "0.0.0.0",
+                "is_up": false,
                 "is_enabled": true,
                 "description": "",
-                "uptime": 3486,
+                "uptime": -1,
                 "address_family": {
                     "ipv4 unicast": {
-                        "received_prefixes": 0,
-                        "accepted_prefixes": 0,
-                        "sent_prefixes": 0
+                        "received_prefixes": -1,
+                        "accepted_prefixes": -1,
+                        "sent_prefixes": -1
                     }
                 }
             }
         }
     }
 }
-[2023-06-23 23:32:08 - 66 - get_config_data() - DEBUG ] get_config_data() executed for input.yml
-[2023-06-23 23:32:08 - 69 - get_config_data() - DEBUG ] get_config_data() {'172.17.0.2': {'bgp': {'asn': 65511, 'rid': '192.168.1.1', 'neighbors': [{'ipaddr': '192.168.1.2', 'remote_asn': 65512}, {'ipaddr': '192.168.3.1', 'remote_asn': 65513}]}, 'interfaces': {'GigabitEthernet3': {'ipaddr': '192.168.3.2 255.255.255.0', 'description': None, 'state': 'up'}, 'GigabitEthernet2': {'ipaddr': '192.168.1.1 255.255.255.0', 'description': None, 'state': 'up'}}}, '172.17.0.3': {'bgp': {'asn': 65512, 'rid': '192.168.2.1', 'neighbors': [{'ipaddr': '192.168.1.1', 'remote_asn': 65511}, {'ipaddr': '192.168.2.2', 'remote_asn': 65513}]}, 'interfaces': {'GigabitEthernet2': {'ipaddr': '192.168.2.1 255.255.255.0', 'description': None, 'state': 'up'}, 'GigabitEthernet3': {'ipaddr': '192.168.1.2 255.255.255.0', 'description': None, 'state': 'up'}}}, '172.17.0.4': {'bgp': {'asn': 65513, 'rid': '192.168.0.2', 'neighbors': [{'ipaddr': '192.168.3.2', 'remote_asn': 65511}, {'ipaddr': '192.168.2.1', 'remote_asn': 65512}]}, 'interfaces': {'GigabitEthernet2': {'ipaddr': '192.168.3.1 255.255.255.0', 'description': None, 'state': 'up'}, 'GigabitEthernet3': {'ipaddr': '192.168.2.2 255.255.255.0', 'description': None, 'state': 'up'}}}}
-[2023-06-23 23:32:08 - 49 - inner() - DEBUG ] *** get_config_data executed - ('input.yml', <Logger __main__ (DEBUG)>)
-[2023-06-23 23:32:08 - 235 - check_bgp() - DEBUG ] check_bgp() connection to 172.17.0.3 closed
-[2023-06-23 23:32:08 - 249 - check_bgp() - DEBUG ] check_bgp() executed on 172.17.0.3
-[2023-06-23 23:32:08 - 250 - check_bgp() - INFO ] check_bgp() BGP peer validation for 172.17.0.3 is OK
-[2023-06-23 23:32:08 - 49 - inner() - DEBUG ] *** check_bgp executed - (<napalm.ios.ios.IOSDriver object at 0x7f4b8ad3fd00>, <Logger __main__ (DEBUG)>)
-[2023-06-23 23:32:08 - 222 - check_bgp() - DEBUG ] check_bgp() connecting to 172.17.0.4...
-[2023-06-23 23:32:08 - 224 - check_bgp() - DEBUG ] check_bgp() getting device facts for 172.17.0.4
-[2023-06-23 23:32:09 - 229 - check_bgp() - DEBUG ] check_bgp() JSON from 172.17.0.4 
+[2023-06-24 16:40:21 - 66 - get_config_data() - DEBUG ] get_config_data() executed for input.yml
+[2023-06-24 16:40:21 - 69 - get_config_data() - DEBUG ] get_config_data() {'172.17.0.2': {'bgp': {'asn': 65511, 'rid': '192.168.1.1', 'neighbors': [{'ipaddr': '192.168.1.2', 'remote_asn': 65512}, {'ipaddr': '192.168.3.1', 'remote_asn': 65513}]}, 'interfaces': {'GigabitEthernet3': {'ipaddr': '192.168.3.2 255.255.255.0', 'description': None, 'state': 'up'}, 'GigabitEthernet2': {'ipaddr': '192.168.1.1 255.255.255.0', 'description': None, 'state': 'up'}}}, '172.17.0.3': {'bgp': {'asn': 65512, 'rid': '192.168.2.1', 'neighbors': [{'ipaddr': '192.168.1.1', 'remote_asn': 65511}, {'ipaddr': '192.168.2.2', 'remote_asn': 65513}]}, 'interfaces': {'GigabitEthernet2': {'ipaddr': '192.168.2.1 255.255.255.0', 'description': None, 'state': 'up'}, 'GigabitEthernet3': {'ipaddr': '192.168.1.2 255.255.255.0', 'description': None, 'state': 'up'}}}, '172.17.0.4': {'bgp': {'asn': 65513, 'rid': '192.168.0.2', 'neighbors': [{'ipaddr': '192.168.3.2', 'remote_asn': 65511}, {'ipaddr': '192.168.2.1', 'remote_asn': 65512}]}, 'interfaces': {'GigabitEthernet2': {'ipaddr': '192.168.3.1 255.255.255.0', 'description': None, 'state': 'up'}, 'GigabitEthernet3': {'ipaddr': '192.168.2.2 255.255.255.0', 'description': None, 'state': 'up'}}}}
+[2023-06-24 16:40:21 - 49 - inner() - DEBUG ] *** get_config_data executed - ('input.yml', <Logger __main__ (DEBUG)>)
+[2023-06-24 16:40:21 - 234 - check_bgp() - DEBUG ] check_bgp() connection to 172.17.0.3 closed
+[2023-06-24 16:40:21 - 252 - check_bgp() - DEBUG ] check_bgp() executed on 172.17.0.3
+[2023-06-24 16:40:21 - 253 - check_bgp() - INFO ] check_bgp() BGP peer validation for 172.17.0.3 is OK
+[2023-06-24 16:40:21 - 49 - inner() - DEBUG ] *** check_bgp executed - (<napalm.ios.ios.IOSDriver object at 0x7fb73f354250>, <Logger __main__ (DEBUG)>)
+[2023-06-24 16:40:21 - 221 - check_bgp() - DEBUG ] check_bgp() connecting to 172.17.0.4...
+[2023-06-24 16:40:21 - 223 - check_bgp() - DEBUG ] check_bgp() getting device facts for 172.17.0.4
+[2023-06-24 16:40:22 - 228 - check_bgp() - DEBUG ] check_bgp() JSON from 172.17.0.4 
  {
     "global": {
         "router_id": "192.168.3.1",
@@ -295,16 +307,16 @@ interface GigabitEthernet3
             "192.168.2.1": {
                 "local_as": 65513,
                 "remote_as": 65512,
-                "remote_id": "192.168.2.1",
-                "is_up": true,
+                "remote_id": "0.0.0.0",
+                "is_up": false,
                 "is_enabled": true,
                 "description": "",
-                "uptime": 3487,
+                "uptime": -1,
                 "address_family": {
                     "ipv4 unicast": {
-                        "received_prefixes": 0,
-                        "accepted_prefixes": 0,
-                        "sent_prefixes": 0
+                        "received_prefixes": -1,
+                        "accepted_prefixes": -1,
+                        "sent_prefixes": -1
                     }
                 }
             },
@@ -312,25 +324,25 @@ interface GigabitEthernet3
                 "local_as": 65513,
                 "remote_as": 65511,
                 "remote_id": "192.168.3.2",
-                "is_up": true,
+                "is_up": false,
                 "is_enabled": true,
                 "description": "",
-                "uptime": 3486,
+                "uptime": -1,
                 "address_family": {
                     "ipv4 unicast": {
-                        "received_prefixes": 0,
-                        "accepted_prefixes": 0,
-                        "sent_prefixes": 0
+                        "received_prefixes": -1,
+                        "accepted_prefixes": -1,
+                        "sent_prefixes": -1
                     }
                 }
             }
         }
     }
 }
-[2023-06-23 23:32:09 - 66 - get_config_data() - DEBUG ] get_config_data() executed for input.yml
-[2023-06-23 23:32:09 - 69 - get_config_data() - DEBUG ] get_config_data() {'172.17.0.2': {'bgp': {'asn': 65511, 'rid': '192.168.1.1', 'neighbors': [{'ipaddr': '192.168.1.2', 'remote_asn': 65512}, {'ipaddr': '192.168.3.1', 'remote_asn': 65513}]}, 'interfaces': {'GigabitEthernet3': {'ipaddr': '192.168.3.2 255.255.255.0', 'description': None, 'state': 'up'}, 'GigabitEthernet2': {'ipaddr': '192.168.1.1 255.255.255.0', 'description': None, 'state': 'up'}}}, '172.17.0.3': {'bgp': {'asn': 65512, 'rid': '192.168.2.1', 'neighbors': [{'ipaddr': '192.168.1.1', 'remote_asn': 65511}, {'ipaddr': '192.168.2.2', 'remote_asn': 65513}]}, 'interfaces': {'GigabitEthernet2': {'ipaddr': '192.168.2.1 255.255.255.0', 'description': None, 'state': 'up'}, 'GigabitEthernet3': {'ipaddr': '192.168.1.2 255.255.255.0', 'description': None, 'state': 'up'}}}, '172.17.0.4': {'bgp': {'asn': 65513, 'rid': '192.168.0.2', 'neighbors': [{'ipaddr': '192.168.3.2', 'remote_asn': 65511}, {'ipaddr': '192.168.2.1', 'remote_asn': 65512}]}, 'interfaces': {'GigabitEthernet2': {'ipaddr': '192.168.3.1 255.255.255.0', 'description': None, 'state': 'up'}, 'GigabitEthernet3': {'ipaddr': '192.168.2.2 255.255.255.0', 'description': None, 'state': 'up'}}}}
-[2023-06-23 23:32:09 - 49 - inner() - DEBUG ] *** get_config_data executed - ('input.yml', <Logger __main__ (DEBUG)>)
-[2023-06-23 23:32:09 - 235 - check_bgp() - DEBUG ] check_bgp() connection to 172.17.0.4 closed
-[2023-06-23 23:32:09 - 249 - check_bgp() - DEBUG ] check_bgp() executed on 172.17.0.4
-[2023-06-23 23:32:09 - 250 - check_bgp() - INFO ] check_bgp() BGP peer validation for 172.17.0.4 is OK
-[2023-06-23 23:32:09 - 49 - inner() - DEBUG ] *** check_bgp executed - (<napalm.ios.ios.IOSDriver object at 0x7f4b8ad3c1c0>, <Logger __main__ (DEBUG)>)
+[2023-06-24 16:40:22 - 66 - get_config_data() - DEBUG ] get_config_data() executed for input.yml
+[2023-06-24 16:40:22 - 69 - get_config_data() - DEBUG ] get_config_data() {'172.17.0.2': {'bgp': {'asn': 65511, 'rid': '192.168.1.1', 'neighbors': [{'ipaddr': '192.168.1.2', 'remote_asn': 65512}, {'ipaddr': '192.168.3.1', 'remote_asn': 65513}]}, 'interfaces': {'GigabitEthernet3': {'ipaddr': '192.168.3.2 255.255.255.0', 'description': None, 'state': 'up'}, 'GigabitEthernet2': {'ipaddr': '192.168.1.1 255.255.255.0', 'description': None, 'state': 'up'}}}, '172.17.0.3': {'bgp': {'asn': 65512, 'rid': '192.168.2.1', 'neighbors': [{'ipaddr': '192.168.1.1', 'remote_asn': 65511}, {'ipaddr': '192.168.2.2', 'remote_asn': 65513}]}, 'interfaces': {'GigabitEthernet2': {'ipaddr': '192.168.2.1 255.255.255.0', 'description': None, 'state': 'up'}, 'GigabitEthernet3': {'ipaddr': '192.168.1.2 255.255.255.0', 'description': None, 'state': 'up'}}}, '172.17.0.4': {'bgp': {'asn': 65513, 'rid': '192.168.0.2', 'neighbors': [{'ipaddr': '192.168.3.2', 'remote_asn': 65511}, {'ipaddr': '192.168.2.1', 'remote_asn': 65512}]}, 'interfaces': {'GigabitEthernet2': {'ipaddr': '192.168.3.1 255.255.255.0', 'description': None, 'state': 'up'}, 'GigabitEthernet3': {'ipaddr': '192.168.2.2 255.255.255.0', 'description': None, 'state': 'up'}}}}
+[2023-06-24 16:40:22 - 49 - inner() - DEBUG ] *** get_config_data executed - ('input.yml', <Logger __main__ (DEBUG)>)
+[2023-06-24 16:40:22 - 234 - check_bgp() - DEBUG ] check_bgp() connection to 172.17.0.4 closed
+[2023-06-24 16:40:22 - 252 - check_bgp() - DEBUG ] check_bgp() executed on 172.17.0.4
+[2023-06-24 16:40:22 - 253 - check_bgp() - INFO ] check_bgp() BGP peer validation for 172.17.0.4 is OK
+[2023-06-24 16:40:22 - 49 - inner() - DEBUG ] *** check_bgp executed - (<napalm.ios.ios.IOSDriver object at 0x7fb74014ad10>, <Logger __main__ (DEBUG)>)
