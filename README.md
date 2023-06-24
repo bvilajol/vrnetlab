@@ -1,7 +1,7 @@
 vrnetlab - VR Network Lab
 -------------------------
 
-This is a fork of the project [vrnetlab/vrnetlab](https://github.com/vrnetlab/vrnetlab) fork from project. 
+This repository is a fork of the project [vrnetlab/vrnetlab](https://github.com/vrnetlab/vrnetlab).
 
 The fork has been created specifically for testing purposes.
 
@@ -11,4 +11,11 @@ It is tested with:
 
  * Cisco CSR1000v 16.12.05
  * Cisco CSR1000v 17.03.04a
- * Cisco CSR1000v 16.12.05
+ * Cisco CSR1000v 17.03.05
+
+[Lab 01 - Introduction to NAPALM](https://github.com/bvilajol/vrnetlab/blob/master/lab/01_napalm_cisco/README.md)
+-------------------------
+
+* You need to build your own containers for the network devices.
+* Simple eBGP scenario of three Cisco CSR1000v nodes.
+* Python NAPALM is used to configure and validate the laboratory.

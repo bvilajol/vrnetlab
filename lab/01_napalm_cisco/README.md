@@ -1,14 +1,26 @@
-# Learning Network Automation
+# Lab 01 - Introduction to NAPALM
 
-Welcome to Network Automation examples
+* You need to build your own containers for the network devices.
+* Created simple eBGP scenario of three Cisco CSR1000v nodes.
+* Pyton NAPALM is used to configure and validate the scenario.
 
-# Introduction to NAPALM
+<p align="center" width="50%">
+    <img width="50%" src="lab.png">
+</p>
 
-You need to build your own containers for the network devices. Used 
-Simple eBGP scenario with a ring of 3 x Cisco CSR1000v.
-NAPALM is used to configure and validate the scenario.
+## 0. Build the image
 
-## Setup the Lab
+* Download csr1000v-universalk9.17.03.05-serial.qcow2 or any other tested version
+* Follow the instructions on [vrnetlab](https://github.com/vrnetlab/vrnetlab/blob/master/csr/README.md)
+
+        sudo docker images
+        REPOSITORY         TAG         IMAGE ID       CREATED             SIZE
+        vrnetlab/vr-csr    17.03.05    484061885a0c   48 minutes ago      2.4GB
+        vrnetlab/vr-csr    17.03.04a   dfafaabe0326   54 minutes ago      2.4GB
+        vrnetlab/vr-csr    16.12.05    059090343a2d   About an hour ago   1.93GB
+        vrnetlab/vr-xcon   latest      0843f237b02a   4 years ago         153MB
+
+## 1. Setup the Lab
 
 The 4th pod that is executed is the one responsible for the wire connections between the virtual routers (a KVM instance within a running pod)
 
@@ -17,13 +29,14 @@ The 4th pod that is executed is the one responsible for the wire connections bet
         sudo docker run -d --name vr3 --privileged vrnetlab/vr-csr:17.03.05
         sudo docker run -d --privileged --name vr-xcon --link vr1 --link vr2 --link vr3 vrnetlab/vr-xcon --p2p vr1/1--vr2/2 vr2/1--vr3/2 vr3/1--vr1/2
 
+        sudo docker ps
         CONTAINER ID   IMAGE                      COMMAND                  CREATED         STATUS                   PORTS                                                 NAMES
         c191dc4ff2f1   vrnetlab/vr-xcon           "/xcon.py --p2p vr1/…"   6 minutes ago   Up 6 minutes                                                                   vr-xcon
         7508b51de8b7   vrnetlab/vr-csr:17.03.05   "/launch.py"             6 minutes ago   Up 6 minutes (healthy)   22/tcp, 830/tcp, 5000/tcp, 10000-10099/tcp, 161/udp   vr3
         adc4129318a3   vrnetlab/vr-csr:17.03.05   "/launch.py"             6 minutes ago   Up 6 minutes (healthy)   22/tcp, 830/tcp, 5000/tcp, 10000-10099/tcp, 161/udp   vr2
         ddcc92b1db41   vrnetlab/vr-csr:17.03.05   "/launch.py"             6 minutes ago   Up 6 minutes (healthy)   22/tcp, 830/tcp, 5000/tcp, 10000-10099/tcp, 161/udp   vr1
 
-### Connecting to nodes (containerized linux KVM/QEMU host)
+### 1.1 Connecting to nodes (containerized linux KVM/QEMU host)
 
 This is not needed as per usual operation, documented as per completeness.
 
@@ -74,7 +87,7 @@ Bootstrap config is modified to enable scp server (NETCONF requires so - to be u
         do wr
         do reload
 
-### Docker networking
+### 1.2 Docker networking
 
 Inspect network module for docker, on bridged interface:
 
@@ -148,7 +161,7 @@ Inspect network module for docker, on bridged interface:
         ]
 
 
-### Connecting console port on routers (IOS running on containerized linux KVM/QEMU host)
+### 1.3 Connecting console port on routers (IOS running on containerized linux KVM/QEMU host)
 
 Console is exposed to port 5000. Connect using telnet.
 
@@ -182,7 +195,7 @@ Console is exposed to port 5000. Connect using telnet.
         Configuration register is 0x2102
 
 
-## Build the Laboratory
+## 2. Build the Laboratory
 
         python3 configure_network.py --input input.yml
 
@@ -282,7 +295,7 @@ Extended logging is available: logging.log
         }
         ...
 
-## Old-school validation for the Laboratory
+## 3. Old-school validation for the Laboratory
 
         $ telnet -l admin 172.17.0.2 5000
         Trying 172.17.0.2...
