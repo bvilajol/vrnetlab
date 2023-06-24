@@ -1,0 +1,55 @@
+---
+172.17.0.2:
+  bgp:
+    asn: 65511
+    rid: 192.168.1.1
+    neighbors:
+    - ipaddr: 192.168.1.2
+      remote_asn: 65512
+    - ipaddr: 192.168.3.1
+      remote_asn: 65513
+  interfaces:
+    GigabitEthernet3:
+      ipaddr: "192.168.3.2 255.255.255.0"
+      description:
+      state: up
+    GigabitEthernet2:
+      ipaddr: "192.168.1.1 255.255.255.0"
+      description:
+      state: up
+172.17.0.3:
+  bgp:
+    asn: 65512
+    rid: 192.168.2.1
+    neighbors:
+    - ipaddr: 192.168.1.1
+      remote_asn: 65511
+    - ipaddr: 192.168.2.2
+      remote_asn: 65513
+  interfaces:
+    GigabitEthernet2:
+      ipaddr: "192.168.2.1 255.255.255.0"
+      description:
+      state: up
+    GigabitEthernet3:
+      ipaddr: "192.168.1.2 255.255.255.0"
+      description:
+      state: up
+172.17.0.4:
+  bgp:
+    asn: 65513
+    rid: 192.168.0.2
+    neighbors:
+    - ipaddr: 192.168.3.2
+      remote_asn: 65511
+    - ipaddr: 192.168.2.1
+      remote_asn: 65512
+  interfaces:
+    GigabitEthernet2:
+      ipaddr: "192.168.3.1 255.255.255.0"
+      description:
+      state: up
+    GigabitEthernet3:
+      ipaddr: "192.168.2.2 255.255.255.0"
+      description:
+      state: up
