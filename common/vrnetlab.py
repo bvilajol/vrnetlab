@@ -356,6 +356,14 @@ class VM:
         self.logger.error('{} not found in {}'.format(expect, show_cmd))
         return False
 
+    @property
+    def version(self):
+        """Read version number from VERSION environment variable
+        The VERSION environment variable is set at build time using the value
+        from the makefile. If the environment variable is not defined please add
+        the variables in the Dockerfile (see csr)"""
+        return os.environ.get("VERSION")
+
 class VR:
     def __init__(self, username, password):
         self.logger = logging.getLogger()
