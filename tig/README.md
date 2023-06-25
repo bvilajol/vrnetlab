@@ -201,6 +201,13 @@ On first startup, database GUI will be available
 
         sudo docker-compose up
 
+        grafana   | logger=context userId=1 orgId=1 uname=admin t=2023-06-25T10:58:28.299998875Z level=info msg="Request Completed" method=GET path=/api/live/ws status=-1 remote_addr=172.19.0.1 time_ms=38 duration=38.004246ms size=0 referer= handler=/api/live/ws
+        grafana   | logger=ngalert.state.manager t=2023-06-25T10:58:28.317186426Z level=info msg="State cache has been initialized" states=0 duration=92.054788ms
+        grafana   | logger=ticker t=2023-06-25T10:58:28.31726062Z level=info msg=starting first_tick=2023-06-25T10:58:30Z
+        grafana   | logger=ngalert.multiorg.alertmanager t=2023-06-25T10:58:28.317275973Z level=info msg="starting MultiOrg Alertmanager"
+        grafana   | logger=grafana.update.checker t=2023-06-25T10:58:28.329786165Z level=info msg="Update check succeeded" duration=104.411423ms
+        grafana   | logger=plugins.update.checker t=2023-06-25T10:58:28.390623833Z level=info msg="Update check succeeded" duration=165.205725ms
+
         http://localhost:3000
 
 Datasource configuration in Gragafa.
