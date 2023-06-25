@@ -13,9 +13,17 @@ It is tested with:
  * Cisco CSR1000v 17.03.04a - csr1000v-universalk9.17.03.04a-serial.qcow2
  * Cisco CSR1000v 17.03.05 - csr1000v-universalk9.17.03.05-serial.qcow2
 
-[Lab 01 - Introduction to NAPALM](https://github.com/bvilajol/vrnetlab/blob/master/lab/01_napalm_cisco/README.md)
+[TIG stack](https://github.com/bvilajol/vrnetlab/blob/master/tig)
 -------------------------
 
-* You need to build your own containers for the network devices.
-* Simple eBGP scenario of three Cisco CSR1000v nodes.
-* Python NAPALM is used to configure and validate the laboratory.
+* [Telegraf](https://www.influxdata.com/time-series-platform/telegraf/) is a plugin-driven server agent for collecting and reporting metrics.  
+* [InfluxDB](https://www.influxdata.com/time-series-platform/influxdb/) handles massive amounts of time-stamped information.  
+* [Grafana](https://grafana.com/) is a trending open platform for analytics and monitoring.  
+
+  
+[Lab 01 - Introduction to NAPALM](https://github.com/bvilajol/vrnetlab/blob/master/lab/01_napalm_cisco)
+-------------------------
+
+* You need to build your own containers for the network devices. This repository has all the needed scripts and steps to do so.
+* Simple eBGP scenario of three [Cisco CSR1000v](https://www.cisco.com/c/en/us/products/routers/cloud-services-router-1000v-series/index.html) nodes.
+* [Python NAPALM](https://github.com/napalm-automation/napalm) is used to configure and validate the laboratory.
