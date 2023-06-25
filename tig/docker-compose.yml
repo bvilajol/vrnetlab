@@ -1,0 +1,40 @@
+version: '3.8'
+
+services:
+  influxdb:
+     image: influxdb:latest
+     container_name: influxdb
+     ports:
+       - "8083:8083"
+       - "8086:8086"
+       - "8090:8090"
+     env_file:
+      - influx/influxv2.env
+     volumes:
+       - influxdb_data:/var/lib/influxdb:rw
+  telegraf:
+     build:
+       context: ./telegraf/
+       dockerfile: Dockerfile
+     user: "0"
+     container_name: telegraf
+     env_file:
+      - telegraf/telegraf.env
+     ports:
+       - "6514:6514/udp"
+     links:
+       - influxdb
+  grafana:
+     image: grafana/grafana:latest
+     container_name: grafana
+     depends_on:
+       - influxdb
+     links:
+       - influxdb
+     ports:
+       - "3000:3000"
+     volumes:
+       - grafana_data:/var/lib/grafana:rw
+volumes:
+  influxdb_data:
+  grafana_data:
