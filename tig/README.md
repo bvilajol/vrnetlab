@@ -152,7 +152,7 @@ Those syslog's will be forwarded to the InfluxDB as time-based storage.
         11565af3bff8   tig-telegraf             "/entrypoint.sh tele…"   52 minutes ago      Up 50 minutes   8092/udp, 0.0.0.0:6514->6514/udp, :::6514->6514/udp, 8125/udp, 8094/tcp                                                           telegraf
         78bb359b60be   influxdb:latest          "/entrypoint.sh infl…"   About an hour ago   Up 50 minutes   0.0.0.0:8083->8083/tcp, :::8083->8083/tcp, 0.0.0.0:8086->8086/tcp, :::8086->8086/tcp, 0.0.0.0:8090->8090/tcp, :::8090->8090/tcp   influxdb
 
-## 2. Build Grafana
+## 3. Build Grafana
 
 A second Docker volume will be created to store configuration and data.
 Update docker-compose.yml file as shown below:
