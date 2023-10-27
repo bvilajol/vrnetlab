@@ -13,6 +13,9 @@ RUN apt-get update -qy \
     qemu-kvm \
  && rm -rf /var/lib/apt/lists/*
 
+ARG VERSION
+ENV VERSION=${VERSION}
+
 COPY vmx /vmx
 COPY *.py /
 COPY juniper.conf /
