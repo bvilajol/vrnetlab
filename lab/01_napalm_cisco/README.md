@@ -11,7 +11,7 @@
 ## 0. Build the image
 
 * Download csr1000v-universalk9.17.03.05-serial.qcow2 or any other tested version
-* Follow the instructions on [vrnetlab](https://github.com/vrnetlab/vrnetlab/blob/master/csr/README.md)T
+* Follow the instructions on [vrnetlab](https://github.com/vrnetlab/vrnetlab/blob/master/csr/README.md)
 * vr-xcon is also needed, but available on docker-images
 
         sudo docker images
