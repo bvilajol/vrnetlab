@@ -17,27 +17,25 @@
         sudo docker images
   
         REPOSITORY         TAG         IMAGE ID       CREATED             SIZE
-        vrnetlab/vr-csr    17.03.05    484061885a0c   48 minutes ago      2.4GB
-        vrnetlab/vr-csr    17.03.04a   dfafaabe0326   54 minutes ago      2.4GB
-        vrnetlab/vr-csr    16.12.05    059090343a2d   About an hour ago   1.93GB
+        vrnetlab/vr-csr    17.03.07    484061885a0c   48 minutes ago      2.4GB
         vrnetlab/vr-xcon   latest      0843f237b02a   4 years ago         153MB
 
 ## 1. Setup the Lab
 
 The 4th pod that is executed is the one responsible for the wire connections between the virtual routers (a KVM instance within a running pod)
 
-        sudo docker run -d --name vr1 --privileged vrnetlab/vr-csr:17.03.05
-        sudo docker run -d --name vr2 --privileged vrnetlab/vr-csr:17.03.05
-        sudo docker run -d --name vr3 --privileged vrnetlab/vr-csr:17.03.05
+        sudo docker run -d --name vr1 --privileged vrnetlab/vr-csr:17.03.07
+        sudo docker run -d --name vr2 --privileged vrnetlab/vr-csr:17.03.07
+        sudo docker run -d --name vr3 --privileged vrnetlab/vr-csr:17.03.07
         sudo docker run -d --privileged --name vr-xcon --link vr1 --link vr2 --link vr3 vrnetlab/vr-xcon --p2p vr1/1--vr2/2 vr2/1--vr3/2 vr3/1--vr1/2
 
         sudo docker ps
         
         CONTAINER ID   IMAGE                      COMMAND                  CREATED         STATUS                   PORTS                                                 NAMES
         c191dc4ff2f1   vrnetlab/vr-xcon           "/xcon.py --p2p vr1/…"   6 minutes ago   Up 6 minutes                                                                   vr-xcon
-        7508b51de8b7   vrnetlab/vr-csr:17.03.05   "/launch.py"             6 minutes ago   Up 6 minutes (healthy)   22/tcp, 830/tcp, 5000/tcp, 10000-10099/tcp, 161/udp   vr3
-        adc4129318a3   vrnetlab/vr-csr:17.03.05   "/launch.py"             6 minutes ago   Up 6 minutes (healthy)   22/tcp, 830/tcp, 5000/tcp, 10000-10099/tcp, 161/udp   vr2
-        ddcc92b1db41   vrnetlab/vr-csr:17.03.05   "/launch.py"             6 minutes ago   Up 6 minutes (healthy)   22/tcp, 830/tcp, 5000/tcp, 10000-10099/tcp, 161/udp   vr1
+        7508b51de8b7   vrnetlab/vr-csr:17.03.07   "/launch.py"             6 minutes ago   Up 6 minutes (healthy)   22/tcp, 830/tcp, 5000/tcp, 10000-10099/tcp, 161/udp   vr3
+        adc4129318a3   vrnetlab/vr-csr:17.03.07   "/launch.py"             6 minutes ago   Up 6 minutes (healthy)   22/tcp, 830/tcp, 5000/tcp, 10000-10099/tcp, 161/udp   vr2
+        ddcc92b1db41   vrnetlab/vr-csr:17.03.07   "/launch.py"             6 minutes ago   Up 6 minutes (healthy)   22/tcp, 830/tcp, 5000/tcp, 10000-10099/tcp, 161/udp   vr1
 
 ### 1.1 Connecting to nodes (containerized linux KVM/QEMU host)
 
@@ -55,8 +53,8 @@ Run usual bash commands towards the running pod:
         drwxr-xr-x   1 root root       4096 Jun 23 16:11 bin
         drwxr-xr-x   2 root root       4096 Apr  2 11:55 boot
         -rw-r--r--   1 root root     358400 Jun 23 16:13 config.iso
-        -rw-r--r--   1 root root   53477376 Jun 23 20:13 csr1000v-universalk9.17.03.05-serial-0-overlay.qcow2
-        -rw-r--r--   1 root root 1451556864 Jun 23 16:11 csr1000v-universalk9.17.03.05-serial.qcow2
+        -rw-r--r--   1 root root   53477376 Jun 23 20:13 csr1000v-universalk9.17.03.07-serial-0-overlay.qcow2
+        -rw-r--r--   1 root root 1451556864 Jun 23 16:11 csr1000v-universalk9.17.03.07-serial.qcow2
         drwxr-xr-x  15 root root       4980 Jun 23 20:01 dev
         drwxr-xr-x   1 root root       4096 Jun 23 20:01 etc
         -rw-r--r--   1 root root          9 Jun 23 20:13 health
