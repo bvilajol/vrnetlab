@@ -1,0 +1,10 @@
+{% for if_name,if_data in interfaces.items() %}
+interface {{if_name}}
+ {% if if_data.description is not none %}
+ description {{if_data.description}}
+ {% endif %}
+ ip address {{if_data.ipaddr}}
+ {% if if_data.state == "up" %}
+ no shutdown
+ {% endif %}
+{% endfor %}

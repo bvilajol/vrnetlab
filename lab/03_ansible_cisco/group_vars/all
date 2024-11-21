@@ -1,0 +1,5 @@
+ansible_user: "vrnetlab"
+ansible_password: "VR-netlab9"
+ansible_port: 22
+ansible_connection: ansible.netcommon.network_cli
+ansible_network_os: ios

@@ -1,0 +1,16 @@
+- ping:
+    _name: ping1
+    _kwargs:
+      destination: 192.168.1.2
+      source: 192.168.1.1
+    success:
+      packet_loss: 0
+    _mode: strict
+- ping:
+    _name: ping2
+    _kwargs:
+      destination: 192.168.3.1
+      source: 192.168.3.2
+    success:
+      packet_loss: 0
+    _mode: strict
