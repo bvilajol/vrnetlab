@@ -1,0 +1,30 @@
+---
+- name: Exercice 2
+  hosts: routers
+  gather_facts: true
+
+
+  tasks:
+    - name: Configure interfaces
+      ios_config:
+        src: "templates/Cisco_interfaces.j2"
+        match: none
+
+    - name: Configure BGP
+      ios_config:
+        src: "templates/Cisco_bgp.j2"
+        match: none
+      register: bgp
+
+    - name: Get BGP Facts
+      napalm_get_facts:
+        filter:
+          - "bgp_neighbors"
+      register: output
+
+    - debug: var=output
+
+    - name: Report BGP Facts
+      template:
+        src: "./templates/Cisco_bgp_report.j2"
+        dest: "./build/{{ inventory_hostname }}.txt"
