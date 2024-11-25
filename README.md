@@ -2,8 +2,8 @@ vrnetlab - VR Network Lab
 -------------------------
 
 This repository is a fork of the project [vrnetlab/vrnetlab](https://github.com/vrnetlab/vrnetlab).
-
 The fork has been created specifically for testing purposes.
+You need to build your own containers for the network devices.
 
 It is tested with:
 
@@ -15,17 +15,12 @@ It is tested with:
 
 The documentation provided in this fork only explains the parts that have been changed in any way from the upstream project. To get a general overview of the vrnetlab project itself, consider reading the docs of the upstream repo.
   
-[Lab 01 - Python NAPALM + Cisco](https://github.com/bvilajol/vrnetlab/blob/master/lab/01_napalm_cisco)
+[Python NAPALM + Cisco](https://github.com/bvilajol/vrnetlab/blob/master/lab/01_napalm_cisco)
 -------------------------
-* You need to build your own containers for the network devices. This repository has all the needed scripts and steps to do so.
-* Simple eBGP scenario of three [Cisco CSR1000v](https://www.cisco.com/c/en/us/products/routers/cloud-services-router-1000v-series/index.html) nodes.
-* [Python NAPALM](https://github.com/napalm-automation/napalm) is used to configure and validate the laboratory.
+* Simple eBGP scenario of three Cisco CSR1000v nodes.
+* Python NAPALM is used to configure and validate the laboratory.
 
-[Lab 02 - Python NAPALM + multivendor](...)
+[ANSIBLE + Cisco](https://github.com/bvilajol/vrnetlab/blob/master/lab/03_ansible_cisco)
 -------------------------
-* You need to build your own containers for the network devices. This repository has all the needed scripts and steps to do so.
-* Simple eBGP scenario with Cisco and Juniper router nodes.
-
-[Lab 03 - ANSIBLE + Cisco](https://github.com/bvilajol/vrnetlab/blob/master/lab/03_ansible_cisco)
--------------------------
-* Same scenario as Lab01 yet using Ansible, napalm_get_facts and napalm_validate examples
+* Simple eBGP build and validated using Ansible.
+* Modules napalm_get_facts and napalm_validate are used as well.
