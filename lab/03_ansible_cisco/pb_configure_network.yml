@@ -1,7 +1,8 @@
 ---
 - name: Exercice 2
   hosts: routers
-  gather_facts: no
+  gather_facts: true
+
 
   tasks:
     - name: Configure interfaces
@@ -23,3 +24,7 @@
 
     - debug: var=output
 
+    - name: Report BGP Facts
+      template:
+        src: "./templates/Cisco_bgp_report.j2"
+        dest: "./build/{{ inventory_hostname }}.txt"

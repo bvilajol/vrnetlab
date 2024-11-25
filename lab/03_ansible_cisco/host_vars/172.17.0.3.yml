@@ -8,10 +8,10 @@ bgp:
     remote_asn: 65513
 interfaces:
   GigabitEthernet3:
-    ipaddr: "192.168.2.1 255.255.255.0"
+    ipaddr: "192.168.1.2 255.255.255.0"
     description:
     state: up
-  GigabitEthernet4:
-    ipaddr: "192.168.1.2 255.255.255.0"
+  GigabitEthernet2:
+    ipaddr: "192.168.2.1 255.255.255.0"
     description:
     state: up
