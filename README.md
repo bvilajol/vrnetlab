@@ -28,4 +28,4 @@ The documentation provided in this fork only explains the parts that have been c
 
 [Lab 03 - ANSIBLE + Cisco](https://github.com/bvilajol/vrnetlab/blob/master/lab/03_ansible_cisco)
 -------------------------
-* Same scenario as Lab01 yet using Ansible and Ansible + NAPALM getters
+* Same scenario as Lab01 yet using Ansible, napalm_get_facts and napalm_validate examples
