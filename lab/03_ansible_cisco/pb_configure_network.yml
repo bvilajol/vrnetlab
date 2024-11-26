@@ -31,3 +31,22 @@
         hostname: "{{ inventory_hostname }}"
         validation_file: "validations/{{ inventory_hostname }}-l3.yml"
       when: bgp is succeeded
+
+    - name: Get BGP Facts for reporting
+      napalm_get_facts:
+        filter:
+          - "bgp_neighbors"
+      register: bgp
+
+    #- debug: var=bgp
+
+    - name: Report BGP
+      template:
+        src: "./templates/Cisco_bgp_report.j2"
+        dest: "./build/{{ inventory_hostname }}.txt"
+      register: report
+
+    - name: Assemble report
+      assemble:
+        src: "./build"  # Directory with files to merge.
+        dest: "./reports/report.txt"  # Merged output filename.
