@@ -1,0 +1,48 @@
+Hostname: 172.17.0.2
+-----------------
+Neighbor:           192.168.1.2
+Enabled:            True
+Neighbor_UP:        True
+Accepted Prefixes:  0
+Received Prefixes:  0
+Sent Prefixes:      0
+
+Neighbor:           192.168.3.1
+Enabled:            True
+Neighbor_UP:        True
+Accepted Prefixes:  0
+Received Prefixes:  0
+Sent Prefixes:      0
+
+Hostname: 172.17.0.3
+-----------------
+Neighbor:           192.168.1.1
+Enabled:            True
+Neighbor_UP:        True
+Accepted Prefixes:  0
+Received Prefixes:  0
+Sent Prefixes:      0
+
+Neighbor:           192.168.2.2
+Enabled:            True
+Neighbor_UP:        True
+Accepted Prefixes:  0
+Received Prefixes:  0
+Sent Prefixes:      0
+
+Hostname: 172.17.0.4
+-----------------
+Neighbor:           192.168.2.1
+Enabled:            True
+Neighbor_UP:        True
+Accepted Prefixes:  0
+Received Prefixes:  0
+Sent Prefixes:      0
+
+Neighbor:           192.168.3.2
+Enabled:            True
+Neighbor_UP:        True
+Accepted Prefixes:  0
+Received Prefixes:  0
+Sent Prefixes:      0
+
