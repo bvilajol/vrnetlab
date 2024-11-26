@@ -16,7 +16,7 @@ It is tested with:
 The documentation provided in this fork only explains the parts that have been changed in any way from the upstream project. To get a general overview of the vrnetlab project itself, consider reading the docs of the upstream repo.
 
 <p align="center" width="50%">
-    <img width="50%" src="01_napalm_cisco/lab.png">
+    <img width="50%" src="lab/01_napalm_cisco/lab.png">
 </p>
 
 Lab01 - [Python NAPALM + Cisco](https://github.com/bvilajol/vrnetlab/blob/master/lab/01_napalm_cisco)
