@@ -1,3 +1,9 @@
+# Logs and virtual router images
+*.log
+*.img
+*.qcow2
+*.tgz
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
