@@ -1,0 +1,11 @@
+- get_bgp_neighbors:
+    global:
+      peers:
+        192.168.1.2:
+          is_enabled: true
+          is_up: true
+          remote_as: 65512
+        192.168.3.1:
+          is_enabled: true
+          is_up: true
+          remote_as: 65513

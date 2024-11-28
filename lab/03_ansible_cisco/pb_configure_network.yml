@@ -1,0 +1,52 @@
+---
+- name: Exercice 2
+  hosts: routers
+  gather_facts: no
+
+  tasks:
+    - name: Configure interfaces i no t'equivoquis de vía
+      ios_config:
+        src: "templates/Cisco_interfaces.j2"
+  
+    - name: Connectivity validation i xapa bé les cintes
+      napalm_validate:
+        hostname: "{{ inventory_hostname }}"
+        validation_file: "validations/{{ inventory_hostname }}-l2.yml"
+        optional_args:
+          expect_string: "#"
+      register: result
+
+    - name: Configure BGP i recorda la reunió
+      ios_config:
+        src: "templates/Cisco_bgp.j2"
+      register: bgp
+
+    - name: Get IP BGP Summary i assegura amb ganes
+      ios_command:
+        commands: "show ip bgp summary"
+      register: "output_ios"
+
+    - name: BGP Peering Validation i escala el finde
+      napalm_validate:
+        hostname: "{{ inventory_hostname }}"
+        validation_file: "validations/{{ inventory_hostname }}-l3.yml"
+      when: bgp is succeeded
+
+    - name: Get BGP Facts for reporting
+      napalm_get_facts:
+        filter:
+          - "bgp_neighbors"
+      register: bgp
+
+    #- debug: var=bgp
+
+    - name: Report BGP
+      template:
+        src: "./templates/Cisco_bgp_report.j2"
+        dest: "./build/{{ inventory_hostname }}.txt"
+      register: report
+
+    - name: Assemble report
+      assemble:
+        src: "./build"  # Directory with files to merge.
+        dest: "./reports/report.txt"  # Merged output filename.

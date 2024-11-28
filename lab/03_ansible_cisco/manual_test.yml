@@ -1,0 +1,25 @@
+---
+- name: Exercice 2
+  hosts: routers
+  gather_facts: no
+
+  tasks:
+    - name: Configure interfaces
+      ios_config:
+        src: "templates/Cisco_interfaces.j2"
+        match: none
+
+    - name: Configure BGP
+      ios_config:
+        src: "templates/Cisco_bgp.j2"
+        match: none
+      register: bgp
+
+    - name: Get IP BGP Summary
+      ios_command:
+        commands: "show ip bgp summary"
+      register: "output_ios"
+
+    - name: Print IP BGP Summary
+      debug:
+        msg: "{{ output_ios.stdout[0] }}"

@@ -1,0 +1,12 @@
+{% for key,value in config_data.items() %}
+router bgp {{value.bgp.asn}}
+{% for bgp_nei in value.bgp.neighbors %}
+ neighbor {{bgp_nei.ipaddr}} remote-as {{bgp_nei.remote_asn}}
+ !
+{% endfor %}
+ address-family ipv4
+{% for bgp_nei in value.bgp.neighbors %}
+  neighbor {{bgp_nei.ipaddr}} activate
+{% endfor %}
+ exit-address-family
+{% endfor %}
